@@ -28,6 +28,10 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);
 .day{margin-top:22px}
 .day-name{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
   color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--line)}
+.day.past{opacity:.45}
+.day.past .meal{display:none}
+.day.past.open .meal{display:block}
+.past-note{font-size:13px;color:var(--muted);padding:6px 0}
 .meal{margin-top:14px}
 .meal-name{font-size:14px;font-weight:600;margin-bottom:8px;display:flex;
   align-items:center;gap:8px}
@@ -100,7 +104,7 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
 
 <footer>
   <div class="bar">
-    <div class="count"><b id="n">0</b> из 21 выбрано</div>
+    <div class="count"><b id="n">0</b> из <span id="total">21</span> выбрано</div>
     <button class="act" id="openList">Список покупок</button>
   </div>
 </footer>
@@ -191,14 +195,17 @@ function buildWeek(){
     pools[m] = shuffled(DISHES.filter(d => d.meal === m), seed + i * 977);
   });
   week = [];
+  const today = new Date();
+  const midnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   for (let day = 0; day < 7; day++){
     const date = new Date(start); date.setDate(start.getDate() + day);
+    const past = date < midnight;
     const meals = MEALS.map(([m, label]) => ({
       meal: m, label,
       slot: m + '-' + day,
       options: [0,1,2].map(k => pools[m][(day * 3 + k) % pools[m].length])
     }));
-    week.push({ date, meals });
+    week.push({ date, meals, past });
   }
 }
 
@@ -216,8 +223,16 @@ function render(){
   root.innerHTML = '';
   week.forEach((day, di) => {
     const sec = document.createElement('section');
-    sec.className = 'day';
-    sec.innerHTML = '<div class="day-name">' + DAYS[di] + ', ' + fmt(day.date) + '</div>';
+    sec.className = 'day' + (day.past ? ' past' : '');
+    sec.innerHTML = '<div class="day-name">' + DAYS[di] + ', ' + fmt(day.date) +
+                    (day.past ? ' — прошёл' : '') + '</div>';
+    if (day.past){
+      const note = document.createElement('div');
+      note.className = 'past-note';
+      note.textContent = 'этот день уже прошёл — нажми, если всё-таки хочешь посмотреть';
+      note.onclick = () => sec.classList.toggle('open');
+      sec.appendChild(note);
+    }
     day.meals.forEach(meal => {
       const block = document.createElement('div');
       block.className = 'meal' + (picked[meal.slot] ? ' done' : '');
@@ -280,15 +295,23 @@ function cardOf(d, slot){
   };
   return el;
 }
+function activeSlots(){
+  const live = new Set();
+  week.forEach((d, i) => { if (!d.past) d.meals.forEach(m => live.add(m.slot)); });
+  return live;
+}
 function updateCount(){
-  const n = Object.keys(picked).length;
+  const live = activeSlots();
+  const n = Object.keys(picked).filter(s => live.has(s)).length;
   document.getElementById('n').textContent = n;
+  document.getElementById('total').textContent = live.size;
 }
 
 /* ---------- список покупок ---------- */
 function shopping(){
   const sum = {}, spices = new Set();
-  Object.values(picked).forEach(id => {
+  const live = activeSlots();
+  Object.entries(picked).filter(([s]) => live.has(s)).map(([, id]) => id).forEach(id => {
     const d = byId[id];
     if (!d) return;
     d.ingredients.forEach(i => {
@@ -302,10 +325,12 @@ function shopping(){
 }
 function renderList(){
   const { sum, spices } = shopping();
-  const n = Object.keys(picked).length;
+  const live = activeSlots();
+  const n = Object.keys(picked).filter(s => live.has(s)).length;
   document.getElementById('sheetSub').textContent =
-    n === 21 ? 'Все 21 блюдо выбрано. Продукты на двоих.'
-             : 'Выбрано ' + n + ' из 21. Список пополнится, когда выберешь остальное.';
+    n === live.size ? 'Всё выбрано — ' + n + ' блюд. Продукты на двоих.'
+                    : 'Выбрано ' + n + ' из ' + live.size +
+                      '. Список пополнится, когда выберешь остальное.';
   const box = document.getElementById('list');
   box.innerHTML = '';
   if (!n){ box.innerHTML = '<p class="pantry">Пока ничего не выбрано.</p>'; return; }
