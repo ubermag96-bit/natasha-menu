@@ -25,13 +25,15 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);
 .sub{color:var(--muted);font-size:13px}
 .wrap{padding:0 16px}
 
-.day{margin-top:22px}
-.day-name{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--line)}
-.day.past{opacity:.45}
-.day.past .meal{display:none}
-.day.past.open .meal{display:block}
+.block{margin-top:24px}
+.block-head{border-left:3px solid var(--accent);padding-left:10px;margin-bottom:4px}
+.cook{font-size:15px;font-weight:700}
+.for-days{font-size:13px;color:var(--muted)}
+.block.past{opacity:.45}
+.block.past .meal{display:none}
+.block.past.open .meal{display:block}
 .past-note{font-size:13px;color:var(--muted);padding:6px 0}
+
 .meal{margin-top:14px}
 .meal-name{font-size:14px;font-weight:600;margin-bottom:8px;display:flex;
   align-items:center;gap:8px}
@@ -48,6 +50,8 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);
 .info{flex:1;min-width:0}
 .title{font-weight:600;font-size:15px;margin-bottom:3px}
 .time{font-size:12px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:5px;
+  padding:1px 5px;margin-left:6px;color:var(--muted);vertical-align:1px}
 .ings{font-size:12px;color:var(--muted);margin-top:4px;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .check{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);flex:none;
@@ -72,23 +76,22 @@ footer{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);
 .count b{font-size:17px}
 button.act{background:var(--accent);color:#fff;border:0;border-radius:10px;
   padding:11px 16px;font:inherit;font-weight:600;cursor:pointer}
-button.act:disabled{opacity:.4}
 button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
 
 .sheet{position:fixed;inset:0;z-index:40;background:var(--bg);overflow-y:auto;
   display:none;padding:16px 16px 40px}
 .sheet.open{display:block}
 .sheet h2{margin:0 0 4px;font-size:20px}
+.tabs{display:flex;gap:8px;margin:16px 0 4px}
+.tab{flex:1;background:none;border:1.5px solid var(--line);color:var(--muted);
+  border-radius:10px;padding:9px;font:inherit;font-size:14px;cursor:pointer}
+.tab.on{border-color:var(--accent);color:var(--accent);font-weight:600}
 .aisle{margin-top:20px}
 .aisle h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;
   color:var(--muted);margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
 .row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-size:15px}
 .row span:last-child{color:var(--muted);white-space:nowrap}
 .pantry{font-size:14px;color:var(--muted);margin-top:6px}
-.tabs{display:flex;gap:8px;margin:16px 0 4px}
-.tab{flex:1;background:none;border:1.5px solid var(--line);color:var(--muted);
-  border-radius:10px;padding:9px;font:inherit;font-size:14px;cursor:pointer}
-.tab.on{border-color:var(--accent);color:var(--accent);font-weight:600}
 .rec{background:var(--card);border:1px solid var(--line);border-radius:12px;
   padding:12px;margin-bottom:10px}
 .rec h4{margin:0 0 2px;font-size:16px}
@@ -97,6 +100,8 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
   color:var(--muted);margin:10px 0 4px}
 .rec ul,.rec ol{margin:0;padding-left:20px;font-size:14px}
 .rec li{margin-bottom:3px}
+.hint{background:var(--accent-soft);border-radius:10px;padding:10px 12px;
+  font-size:13px;margin-top:10px}
 .sheet-actions{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap}
 .toast{position:fixed;bottom:110px;left:50%;transform:translateX(-50%);
   background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:20px;
@@ -116,8 +121,8 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
 
 <footer>
   <div class="bar">
-    <div class="count"><b id="n">0</b> из <span id="total">21</span> выбрано</div>
-    <button class="act" id="openList">Список покупок</button>
+    <div class="count"><b id="n">0</b> из <span id="total">9</span> выбрано</div>
+    <button class="act" id="openList">Продукты и рецепты</button>
   </div>
 </footer>
 
@@ -131,7 +136,7 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
   <div id="list"></div>
   <div id="recipes" hidden></div>
   <div class="sheet-actions">
-    <button class="act" id="copy">Скопировать</button>
+    <button class="act" id="copy">Скопировать список</button>
     <button class="act ghost" id="share">Отправить в телеграм</button>
     <button class="act ghost" id="close">Назад к меню</button>
   </div>
@@ -140,31 +145,39 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
 <div class="toast" id="toast"></div>
 
 <script>
-const DAYS = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
+const DAYS = ['понедельник','вторник','среда','четверг','пятница','суббота','воскресенье'];
+// «на среду», а не «на среда»
+const DAYS_ACC = ['понедельник','вторник','среду','четверг','пятницу','субботу','воскресенье'];
 const MEALS = [['breakfast','Завтрак'],['lunch','Обед'],['dinner','Ужин']];
 const AISLE_ORDER = ['овощи','мясо-рыба','молочка','заморозка','бакалея'];
-const EATERS = 2;                 // на двоих
+const EATERS = 2;
 const MONTHS = ['января','февраля','марта','апреля','мая','июня','июля',
                 'августа','сентября','октября','ноября','декабря'];
+const MODE_TAG = { batch:'готовим партией', assemble:'собрать за 5 минут',
+                   fresh:'делать каждое утро' };
+// три готовки на неделю: воскресенье → пн-вт-ср, среда → чт-пт, пятница → сб-вс
+const BLOCKS = [
+  { days:[0,1,2], cook:'в воскресенье' },
+  { days:[3,4],   cook:'в среду вечером' },
+  { days:[5,6],   cook:'в пятницу вечером' },
+];
 
 /* ---------- неделя ---------- */
-// Воскресенье → меню на завтрашнюю неделю. Пн–Сб → меню текущей недели,
-// чтобы среди недели она видела ровно то, что выбрала в воскресенье.
 function weekStart(today = new Date()){
   const d = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-  const dow = d.getDay();                       // 0 — воскресенье
+  const dow = d.getDay();
   d.setDate(d.getDate() + (dow === 0 ? 1 : 1 - dow));
   return d;
 }
-function seedOf(d){
-  return d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate();
-}
+function seedOf(d){ return d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate(); }
 function fmt(d){ return d.getDate() + ' ' + MONTHS[d.getMonth()]; }
-// местная дата, без сдвига по Гринвичу
 function iso(d){
   const m = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');
   return d.getFullYear() + '-' + m + '-' + day;
+}
+function dateOf(offset){
+  const d = new Date(start); d.setDate(start.getDate() + offset); return d;
 }
 
 /* ---------- предсказуемая тасовка ---------- */
@@ -187,28 +200,79 @@ function shuffled(arr, seed){
   return a;
 }
 
-/* ---------- округление до покупаемого ---------- */
+/* ---------- количества ---------- */
+function num(v){ return (Math.round(v * 100) / 100).toString().replace('.', ','); }
 function roundUp(v, step){ return Math.ceil(v / step) * step; }
 function amount(qty, unit){
-  if (unit === 'шт'){
-    const n = Math.ceil(qty - 0.001);
-    return n + ' шт';
-  }
+  if (unit === 'шт') return Math.ceil(qty - 0.001) + ' шт';
   if (qty >= 1000) return (roundUp(qty, 100) / 1000).toFixed(1).replace('.', ',') +
                           (unit === 'мл' ? ' л' : ' кг');
   return roundUp(qty, unit === 'мл' ? 50 : 10) + ' ' + unit;
 }
-
-function num(v){
-  return (Math.round(v * 100) / 100).toString().replace('.', ',');
+function portions(block){ return block.dates.length * EATERS; }
+function plural(n, one, few, many){
+  const a = Math.abs(n) % 100, b = a % 10;
+  if (a > 10 && a < 20) return many;
+  if (b > 1 && b < 5) return few;
+  if (b === 1) return one;
+  return many;
 }
-function forTwo(i){ return num(i.qty * EATERS) + ' ' + i.unit; }
+function portionsText(n){ return n + ' ' + plural(n, 'порцию', 'порции', 'порций'); }
+function daysText(block, acc){
+  const src = acc ? DAYS_ACC : DAYS;
+  return BLOCKS[block.i].days.map(d => src[d]).join(', ');
+}
+function ingLine(d){
+  return d.ingredients.filter(i => i.aisle !== 'специи').map(i => i.name).join(', ');
+}
+
+/* ---------- состояние ---------- */
+const start = weekStart();
+const KEY = 'menu9-' + iso(start);
+let picked = {};
+try { picked = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { picked = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch(e){} }
+
+let DISHES = [], byId = {}, plan = [];
+const expanded = new Set();
+
+/* ---------- раскладка недели ---------- */
+function buildWeek(){
+  const seed = seedOf(start);
+  const today = new Date();
+  const midnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  plan = BLOCKS.map((b, bi) => {
+    const dates = b.days.map(dateOf);
+    return {
+      i: bi, cook: b.cook, dates,
+      long: b.days.length >= 3,
+      past: dates[dates.length - 1] < midnight,
+      meals: []
+    };
+  });
+  MEALS.forEach(([meal, label], mi) => {
+    const all = shuffled(DISHES.filter(d => d.meal === meal), seed + mi * 977);
+    const used = new Set();
+    plan.forEach(block => {
+      // в трёхдневный блок идут только блюда, которые живут три дня
+      const fit = all.filter(d => !used.has(d.id) && (!block.long || d.keep_days >= 3));
+      const options = fit.slice(0, 3);
+      options.forEach(d => used.add(d.id));
+      block.meals.push({ meal, label, slot: meal + '-' + block.i, options });
+    });
+  });
+}
+function liveSlots(){
+  const s = new Set();
+  plan.forEach(b => { if (!b.past) b.meals.forEach(m => s.add(m.slot)); });
+  return s;
+}
+function blockOf(slot){ return plan[+slot.split('-')[1]]; }
 
 /* ---------- ссылка с выбором ---------- */
-// 21 символ: по одному на приём пищи, 0-2 — номер варианта, x — не выбрано
 function encodePlan(){
   let out = '';
-  week.forEach(day => day.meals.forEach(m => {
+  plan.forEach(b => b.meals.forEach(m => {
     const k = m.options.findIndex(o => o.id === picked[m.slot]);
     out += k < 0 ? 'x' : String(k);
   }));
@@ -216,87 +280,50 @@ function encodePlan(){
 }
 function applyPlan(code){
   const [date, seq] = (code || '').split('.');
-  if (date !== iso(start) || !seq || seq.length !== 21) return false;
+  if (date !== iso(start) || !seq || seq.length !== 9) return false;
   let k = 0, changed = false;
-  week.forEach(day => day.meals.forEach(m => {
+  plan.forEach(b => b.meals.forEach(m => {
     const c = seq[k++];
     if (c >= '0' && c <= '2' && m.options[+c]){ picked[m.slot] = m.options[+c].id; changed = true; }
   }));
   if (changed) save();
   return changed;
 }
-function planUrl(){
-  return location.origin + location.pathname + '?p=' + encodePlan();
-}
+function planUrl(){ return location.origin + location.pathname + '?p=' + encodePlan(); }
 
-/* ---------- состояние ---------- */
-const start = weekStart();
-const KEY = 'menu-' + iso(start);
-const OLD_KEY = 'menu-' + start.toISOString().slice(0, 10);   // ключ до исправления даты
-let picked = {};
-try {
-  picked = JSON.parse(localStorage.getItem(KEY) ||
-                      localStorage.getItem(OLD_KEY) || '{}');
-} catch(e) { picked = {}; }
-function save(){ try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch(e){} }
-
-let DISHES = [], byId = {}, week = [];
-const expanded = new Set();   // приёмы пищи, где показаны все три варианта
-
-/* ---------- сборка недели ---------- */
-function buildWeek(){
-  const seed = seedOf(start);
-  const pools = {};
-  MEALS.forEach(([m], i) => {
-    pools[m] = shuffled(DISHES.filter(d => d.meal === m), seed + i * 977);
-  });
-  week = [];
-  const today = new Date();
-  const midnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-  for (let day = 0; day < 7; day++){
-    const date = new Date(start); date.setDate(start.getDate() + day);
-    const past = date < midnight;
-    const meals = MEALS.map(([m, label]) => ({
-      meal: m, label,
-      slot: m + '-' + day,
-      options: [0,1,2].map(k => pools[m][(day * 3 + k) % pools[m].length])
-    }));
-    week.push({ date, meals, past });
-  }
-}
-
-/* ---------- отрисовка ---------- */
-function ingLine(d){
-  return d.ingredients.filter(i => i.aisle !== 'специи')
-          .map(i => i.name).join(', ');
-}
+/* ---------- отрисовка меню ---------- */
 function render(){
-  const end = new Date(start); end.setDate(start.getDate() + 6);
+  const end = dateOf(6);
   document.getElementById('dates').textContent =
-    'с ' + fmt(start) + ' по ' + fmt(end) + ' · продукты на двоих';
+    'с ' + fmt(start) + ' по ' + fmt(end) + ' · три готовки, продукты на двоих';
 
   const root = document.getElementById('menu');
   root.innerHTML = '';
-  week.forEach((day, di) => {
+  plan.forEach(block => {
     const sec = document.createElement('section');
-    sec.className = 'day' + (day.past ? ' past' : '');
-    sec.innerHTML = '<div class="day-name">' + DAYS[di] + ', ' + fmt(day.date) +
-                    (day.past ? ' — прошёл' : '') + '</div>';
-    if (day.past){
+    sec.className = 'block' + (block.past ? ' past' : '');
+    sec.innerHTML =
+      '<div class="block-head">' +
+        '<div class="cook">Готовим ' + block.cook + (block.past ? ' — прошло' : '') + '</div>' +
+        '<div class="for-days">на ' + daysText(block, true) + ' · ' +
+          fmt(block.dates[0]) + '–' + fmt(block.dates[block.dates.length - 1]) +
+          ' · по ' + portionsText(portions(block)) + ' каждого блюда</div>' +
+      '</div>';
+    if (block.past){
       const note = document.createElement('div');
       note.className = 'past-note';
-      note.textContent = 'этот день уже прошёл — нажми, если всё-таки хочешь посмотреть';
+      note.textContent = 'эти дни уже прошли — нажми, если хочешь посмотреть';
       note.onclick = () => sec.classList.toggle('open');
       sec.appendChild(note);
     }
-    day.meals.forEach(meal => {
-      const block = document.createElement('div');
-      block.className = 'meal' + (picked[meal.slot] ? ' done' : '');
-      block.innerHTML = '<div class="meal-name"><span class="dot"></span>' + meal.label + '</div>';
+    block.meals.forEach(meal => {
+      const box = document.createElement('div');
+      box.className = 'meal' + (picked[meal.slot] ? ' done' : '');
+      box.innerHTML = '<div class="meal-name"><span class="dot"></span>' + meal.label + '</div>';
       const chosen = picked[meal.slot];
       const collapsed = chosen && !expanded.has(meal.slot);
       const show = collapsed ? meal.options.filter(d => d.id === chosen) : meal.options;
-      show.forEach(d => block.appendChild(cardOf(d, meal.slot)));
+      show.forEach(d => box.appendChild(cardOf(d, meal.slot)));
       if (chosen){
         const sw = document.createElement('button');
         sw.className = 'swap';
@@ -305,15 +332,17 @@ function render(){
           if (collapsed) expanded.add(meal.slot); else expanded.delete(meal.slot);
           render();
         };
-        block.appendChild(sw);
+        box.appendChild(sw);
       }
-      sec.appendChild(block);
+      sec.appendChild(box);
     });
     root.appendChild(sec);
   });
   updateCount();
 }
 function cardOf(d, slot){
+  const block = blockOf(slot);
+  const mult = portions(block);
   const el = document.createElement('article');
   el.className = 'card' + (picked[slot] === d.id ? ' sel' : '');
   const img = '<img class="thumb" src="' + d.photo + '" alt="" loading="lazy" ' +
@@ -323,7 +352,8 @@ function cardOf(d, slot){
     '<div class="card-top">' + img +
       '<div class="info">' +
         '<div class="title">' + d.title + '</div>' +
-        '<div class="time">активно ' + d.active_min + ' мин</div>' +
+        '<div class="time">активно ' + d.active_min + ' мин' +
+          '<span class="tag">' + MODE_TAG[d.mode] + '</span></div>' +
         '<div class="ings">' + ingLine(d) + '</div>' +
       '</div>' +
       '<div class="check">✓</div>' +
@@ -331,9 +361,9 @@ function cardOf(d, slot){
     '<button class="more">Продукты и рецепт</button>' +
     '<div class="details">' +
       '<img class="big" src="' + d.photo + '" alt="" loading="lazy" onerror="this.remove()">' +
-      '<h4>Продукты на двоих</h4><ul>' +
+      '<h4>Продукты на ' + portionsText(mult) + '</h4><ul>' +
         d.ingredients.map(i => '<li>' + i.name +
-          (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + forTwo(i)) +
+          (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + num(i.qty * mult) + ' ' + i.unit) +
           '</li>').join('') +
       '</ul>' +
       '<h4>Как готовить</h4><ol>' +
@@ -341,23 +371,15 @@ function cardOf(d, slot){
       '</ol>' +
     '</div>';
   el.querySelector('.card-top').onclick = () => {
-    if (picked[slot] === d.id){ delete picked[slot]; expanded.delete(slot); }
-    else { picked[slot] = d.id; expanded.delete(slot); }
+    if (picked[slot] === d.id) delete picked[slot]; else picked[slot] = d.id;
+    expanded.delete(slot);
     save(); render();
   };
-  el.querySelector('.more').onclick = e => {
-    e.stopPropagation();
-    el.classList.toggle('open');
-  };
+  el.querySelector('.more').onclick = e => { e.stopPropagation(); el.classList.toggle('open'); };
   return el;
 }
-function activeSlots(){
-  const live = new Set();
-  week.forEach((d, i) => { if (!d.past) d.meals.forEach(m => live.add(m.slot)); });
-  return live;
-}
 function updateCount(){
-  const live = activeSlots();
+  const live = liveSlots();
   const n = Object.keys(picked).filter(s => live.has(s)).length;
   document.getElementById('n').textContent = n;
   document.getElementById('total').textContent = live.size;
@@ -366,31 +388,31 @@ function updateCount(){
 /* ---------- список покупок ---------- */
 function shopping(){
   const sum = {}, spices = new Set();
-  const live = activeSlots();
-  Object.entries(picked).filter(([s]) => live.has(s)).map(([, id]) => id).forEach(id => {
+  const live = liveSlots();
+  Object.entries(picked).forEach(([slot, id]) => {
+    if (!live.has(slot)) return;
     const d = byId[id];
     if (!d) return;
+    const mult = portions(blockOf(slot));
     d.ingredients.forEach(i => {
       if (i.aisle === 'специи'){ spices.add(i.name); return; }
-      const k = i.name;
-      if (!sum[k]) sum[k] = { qty: 0, unit: i.unit, aisle: i.aisle };
-      sum[k].qty += i.qty * EATERS;
+      if (!sum[i.name]) sum[i.name] = { qty: 0, unit: i.unit, aisle: i.aisle };
+      sum[i.name].qty += i.qty * mult;
     });
   });
   return { sum, spices: [...spices].sort() };
 }
 function renderList(){
   const { sum, spices } = shopping();
-  const live = activeSlots();
+  const live = liveSlots();
   const n = Object.keys(picked).filter(s => live.has(s)).length;
   document.getElementById('sheetSub').textContent =
-    n === live.size ? 'Всё выбрано — ' + n + ' блюд. Продукты на двоих.'
+    n === live.size ? 'Всё выбрано — ' + n + ' блюд на неделю. Продукты на двоих.'
                     : 'Выбрано ' + n + ' из ' + live.size +
                       '. Список пополнится, когда выберешь остальное.';
   const box = document.getElementById('list');
   box.innerHTML = '';
   if (!n){ box.innerHTML = '<p class="pantry">Пока ничего не выбрано.</p>'; return; }
-
   AISLE_ORDER.forEach(aisle => {
     const items = Object.entries(sum).filter(([, v]) => v.aisle === aisle)
                         .sort((a, b) => a[0].localeCompare(b[0], 'ru'));
@@ -410,63 +432,53 @@ function renderList(){
     box.appendChild(d);
   }
 }
-function chosenByDay(){
-  const out = [];
-  week.forEach((day, di) => {
-    if (day.past) return;
-    const items = day.meals
-      .filter(m => picked[m.slot])
-      .map(m => ({ label: m.label, dish: byId[picked[m.slot]] }))
-      .filter(x => x.dish);
-    if (items.length) out.push({ name: DAYS[di], date: day.date, items });
-  });
-  return out;
-}
+
+/* ---------- рецепты ---------- */
 function renderRecipes(){
   const box = document.getElementById('recipes');
-  const days = chosenByDay();
   box.innerHTML = '';
-  if (!days.length){
-    box.innerHTML = '<p class="pantry">Пока ничего не выбрано — рецепты появятся здесь.</p>';
-    return;
-  }
-  days.forEach(day => {
-    const d = document.createElement('div');
-    d.className = 'aisle';
-    d.innerHTML = '<h3>' + day.name + ', ' + fmt(day.date) + '</h3>' +
-      day.items.map(({ label, dish }) =>
+  let any = false;
+  plan.forEach(block => {
+    if (block.past) return;
+    const items = block.meals.filter(m => picked[m.slot])
+                             .map(m => ({ label: m.label, dish: byId[picked[m.slot]] }))
+                             .filter(x => x.dish);
+    if (!items.length) return;
+    any = true;
+    const mult = portions(block);
+    const el = document.createElement('div');
+    el.className = 'aisle';
+    el.innerHTML = '<h3>готовим ' + block.cook + ' — на ' + daysText(block, true) + '</h3>' +
+      items.map(({ label, dish }) =>
         '<div class="rec">' +
           '<h4>' + label + ': ' + dish.title + '</h4>' +
-          '<div class="t">активно ' + dish.active_min + ' мин</div>' +
-          '<div class="lbl">продукты на двоих</div><ul>' +
+          '<div class="t">активно ' + dish.active_min + ' мин · ' + MODE_TAG[dish.mode] +
+            (dish.mode === 'batch' ? ' · хранить до ' + dish.keep_days + ' ' +
+              plural(dish.keep_days, 'дня', 'дней', 'дней') : '') + '</div>' +
+          '<div class="lbl">продукты на ' + portionsText(mult) + '</div><ul>' +
             dish.ingredients.map(i => '<li>' + i.name +
-              (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + forTwo(i)) + '</li>').join('') +
+              (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + num(i.qty * mult) + ' ' + i.unit) +
+              '</li>').join('') +
           '</ul>' +
           '<div class="lbl">как готовить</div><ol>' +
             dish.steps.map(x => '<li>' + x + '</li>').join('') +
           '</ol>' +
         '</div>').join('');
-    box.appendChild(d);
+    box.appendChild(el);
   });
-}
-function recipesText(){
-  let t = 'Рецепты на неделю (продукты на двоих)\n';
-  chosenByDay().forEach(day => {
-    t += '\n=== ' + day.name.toUpperCase() + ', ' + fmt(day.date) + ' ===\n';
-    day.items.forEach(({ label, dish }) => {
-      t += '\n' + label + ': ' + dish.title + ' (активно ' + dish.active_min + ' мин)\n';
-      dish.ingredients.forEach(i => {
-        t += '  • ' + i.name + (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + forTwo(i)) + '\n';
-      });
-      dish.steps.forEach((x, k) => { t += '  ' + (k + 1) + '. ' + x + '\n'; });
-    });
-  });
-  return t;
+  if (!any){
+    box.innerHTML = '<p class="pantry">Пока ничего не выбрано — рецепты появятся здесь.</p>';
+    return;
+  }
+  const hint = document.createElement('div');
+  hint.className = 'hint';
+  hint.textContent = 'Лук и чеснок кладём крупными кусками и вынимаем перед подачей: ' +
+    'вкус остаётся в масле, а от тяжести после еды они больше не мучают.';
+  box.appendChild(hint);
 }
 function listText(){
   const { sum, spices } = shopping();
-  const end = new Date(start); end.setDate(start.getDate() + 6);
-  let t = 'Продукты на неделю ' + fmt(start) + ' — ' + fmt(end) + ' (на двоих)\n';
+  let t = 'Продукты на неделю ' + fmt(start) + ' — ' + fmt(dateOf(6)) + ' (на двоих)\n';
   AISLE_ORDER.forEach(aisle => {
     const items = Object.entries(sum).filter(([, v]) => v.aisle === aisle)
                         .sort((a, b) => a[0].localeCompare(b[0], 'ru'));
@@ -477,8 +489,31 @@ function listText(){
   if (spices.length) t += '\nДома проверить: ' + spices.join(', ') + '\n';
   return t;
 }
+function recipesText(){
+  let t = 'Рецепты на неделю\n';
+  plan.forEach(block => {
+    if (block.past) return;
+    const items = block.meals.filter(m => picked[m.slot])
+                             .map(m => ({ label: m.label, dish: byId[picked[m.slot]] }))
+                             .filter(x => x.dish);
+    if (!items.length) return;
+    const mult = portions(block);
+    t += '\n=== ГОТОВИМ ' + block.cook.toUpperCase() + ' — НА ' +
+         daysText(block, true).toUpperCase() + ' ===\n';
+    items.forEach(({ label, dish }) => {
+      t += '\n' + label + ': ' + dish.title + ' (активно ' + dish.active_min +
+           ' мин, на ' + portionsText(mult) + ')\n';
+      dish.ingredients.forEach(i => {
+        t += '  • ' + i.name +
+             (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + num(i.qty * mult) + ' ' + i.unit) + '\n';
+      });
+      dish.steps.forEach((x, k) => { t += '  ' + (k + 1) + '. ' + x + '\n'; });
+    });
+  });
+  return t;
+}
 
-/* ---------- вкладки шторки ---------- */
+/* ---------- вкладки и события ---------- */
 let tab = 'shop';
 function showTab(which){
   tab = which;
@@ -491,8 +526,6 @@ function showTab(which){
   document.getElementById('copy').textContent = shop ? 'Скопировать список' : 'Скопировать рецепты';
   window.scrollTo(0, 0);
 }
-
-/* ---------- события ---------- */
 function toast(msg){
   const t = document.getElementById('toast');
   t.textContent = msg; t.classList.add('show');
@@ -516,10 +549,11 @@ document.getElementById('copy').onclick = async () => {
   }
 };
 document.getElementById('share').onclick = () => {
-  const n = Object.keys(picked).filter(s => activeSlots().has(s)).length;
-  const text = 'Меню на неделю: ' + n + ' блюд, список продуктов и рецепты';
+  const live = liveSlots();
+  const n = Object.keys(picked).filter(s => live.has(s)).length;
   window.open('https://t.me/share/url?url=' + encodeURIComponent(planUrl()) +
-              '&text=' + encodeURIComponent(text), '_blank');
+    '&text=' + encodeURIComponent('Меню на неделю: ' + n +
+      ' блюд, список продуктов и рецепты'), '_blank');
 };
 
 /* ---------- старт ---------- */

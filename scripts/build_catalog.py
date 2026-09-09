@@ -10,6 +10,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARTS = ["breakfast", "lunch", "dinner"]
 AISLES = {"овощи", "мясо-рыба", "молочка", "бакалея", "заморозка", "специи", "прочее"}
 MAX_ACTIVE = 20
+# убраны как сильно газообразующие (решение 2026-09-09)
+BANNED = {"лук зелёный", "брокколи", "горошек зелёный замороженный",
+          "капуста белокочанная", "фасоль консервированная",
+          "цветная капуста замороженная", "нут консервированный",
+          "чечевица красная"}
+MODES = {"batch", "assemble", "fresh"}
 
 def norm(t):
     return t.lower().replace("ё", "е")
@@ -57,7 +63,15 @@ def main():
             errors.append(f"{d['id']}: нет поискового запроса для фото")
         if not d.get("steps"):
             errors.append(f"{d['id']}: нет шагов приготовления")
+        if d.get("mode") not in MODES:
+            errors.append(f"{d['id']}: mode должен быть одним из {sorted(MODES)}")
+        if d["meal"] != "breakfast" and d.get("mode") == "fresh":
+            errors.append(f"{d['id']}: обед и ужин не могут быть fresh — их готовят партией")
+        if d.get("keep_days") not in (2, 3):
+            errors.append(f"{d['id']}: keep_days должен быть 2 или 3")
         for ing in d["ingredients"]:
+            if ing["name"] in BANNED:
+                errors.append(f"{d['id']}: «{ing['name']}» убран из рациона")
             if ing["aisle"] not in AISLES:
                 errors.append(f"{d['id']}: неизвестный отдел {ing['aisle']}")
             if ing["aisle"] == "специи":

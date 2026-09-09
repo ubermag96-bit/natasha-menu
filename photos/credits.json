@@ -15,9 +15,9 @@
   "page": "https://www.pexels.com/photo/holding-a-plate-with-delicious-food-9553317/"
  },
  "d-losos-brokkoli": {
-  "author": "Valeria Boltneva",
-  "page": "https://www.pexels.com/photo/fish-in-sauce-for-dinner-20182304/",
-  "photo_id": 20182304
+  "photo_id": 14537684,
+  "author": "Cristian Mihaila",
+  "page": "https://www.pexels.com/photo/grilled-vegetables-and-fish-served-on-white-plate-14537684/"
  },
  "b-omlet-tomat": {
   "author": "Engin Akyurt",
@@ -179,11 +179,6 @@
   "page": "https://www.pexels.com/photo/delicious-shrimp-fried-rice-served-in-a-bowl-34683317/",
   "photo_id": 34683317
  },
- "l-sup-tomatnyi": {
-  "author": "Jana Ohajdova",
-  "page": "https://www.pexels.com/photo/ladle-pouring-soup-into-a-bowl-11033944/",
-  "photo_id": 11033944
- },
  "l-kotlety-indeika-pyure": {
   "author": "Muhammad  Khawar Nazir",
   "page": "https://www.pexels.com/photo/delicious-dinner-plate-with-mashed-potatoes-37529063/",
@@ -203,11 +198,6 @@
   "author": "Cristian Mihaila",
   "page": "https://www.pexels.com/photo/cooked-fish-fillet-beside-mixed-vegetable-12431192/",
   "photo_id": 12431192
- },
- "l-sup-chechevica": {
-  "author": "Snappr",
-  "page": "https://www.pexels.com/photo/warm-and-hearty-lentil-soup-in-terra-cotta-bowl-29850843/",
-  "photo_id": 29850843
  },
  "l-kurica-ovoshi-duhovka": {
   "author": "Vladimir Srajber",
@@ -239,11 +229,6 @@
   "author": "Collab Media",
   "page": "https://www.pexels.com/photo/36918013/"
  },
- "l-salat-tunec-fasol": {
-  "photo_id": 19572489,
-  "author": "Nadin Sh",
-  "page": "https://www.pexels.com/photo/19572489/"
- },
  "l-gulyash-indeika": {
   "author": "kirpiklipencere",
   "page": "https://www.pexels.com/photo/traditional-hungarian-goulash-in-pot-38441087/",
@@ -253,11 +238,6 @@
   "photo_id": 31119077,
   "author": "Augusto Carneiro Junior",
   "page": "https://www.pexels.com/photo/delicious-homemade-lasagna-on-ceramic-plate-31119077/"
- },
- "l-borsch-bystryi": {
-  "author": "Polina Tankilevitch",
-  "page": "https://www.pexels.com/photo/a-jar-of-dill-pickles-and-a-bowl-of-food-8599735/",
-  "photo_id": 8599735
  },
  "l-kurica-teriyaki": {
   "author": "Marvin  Sacdalan",
@@ -289,11 +269,6 @@
   "page": "https://www.pexels.com/photo/crop-person-eating-delicious-salad-with-mix-leaves-and-beef-4173178/",
   "photo_id": 4173178
  },
- "l-nut-kari": {
-  "author": "Muhammad  Khawar Nazir",
-  "page": "https://www.pexels.com/photo/close-up-of-chana-masala-9287032/",
-  "photo_id": 9287032
- },
  "l-zapekanka-makarony": {
   "author": "Ronmar Lacamiento",
   "page": "https://www.pexels.com/photo/close-up-photography-of-baked-mac-806357/",
@@ -308,11 +283,6 @@
   "author": "Nadin Sh",
   "page": "https://www.pexels.com/photo/vegetable-salad-with-chicken-breast-on-white-ceramic-plate-13312316/",
   "photo_id": 13312316
- },
- "d-omlet-ovoshi": {
-  "author": "Garley Gibson",
-  "page": "https://www.pexels.com/photo/pancake-with-cucumber-15481458/",
-  "photo_id": 15481458
  },
  "d-treska-ovoshi": {
   "author": "Farhad Ibrahimzade",
@@ -345,9 +315,9 @@
   "photo_id": 27863236
  },
  "d-kurica-brokkoli-airfryer": {
-  "author": "FOX ^.ᆽ.^= ∫",
-  "page": "https://www.pexels.com/photo/crispy-chicken-pieces-in-modern-air-fryer-35285814/",
-  "photo_id": 35285814
+  "photo_id": 15735597,
+  "author": "Milton Das",
+  "page": "https://www.pexels.com/photo/15735597/"
  },
  "d-farshirovannye-percy": {
   "author": "Lena Ti",
@@ -400,9 +370,9 @@
   "photo_id": 37726976
  },
  "d-zapekanka-brokkoli": {
-  "author": "Sergey Zelenov",
-  "page": "https://www.pexels.com/photo/close-up-of-a-ready-to-eat-pizza-with-cheese-9166298/",
-  "photo_id": 9166298
+  "photo_id": 5639280,
+  "author": "Shameel mukkath",
+  "page": "https://www.pexels.com/photo/a-baked-casserole-on-a-cast-iron-skillet-5639280/"
  },
  "d-losos-shpinat": {
   "author": "Valeria Boltneva",
@@ -429,11 +399,6 @@
   "author": "Diana ✨",
   "page": "https://www.pexels.com/photo/15214139/"
  },
- "d-salat-kapusta-kurica": {
-  "author": "Sergio Arreola",
-  "page": "https://www.pexels.com/photo/meat-with-corn-and-salad-17942481/",
-  "photo_id": 17942481
- },
  "d-baklazhany-farsh": {
   "author": "Yesim  G. Ozdemir",
   "page": "https://www.pexels.com/photo/delicious-baked-stuffed-eggplants-with-tomatoes-29040190/",
@@ -448,5 +413,40 @@
   "photo_id": 36865007,
   "author": "Kindel Media",
   "page": "https://www.pexels.com/photo/36865007/"
+ },
+ "l-tushenaya-govyadina": {
+  "photo_id": 18285230,
+  "author": "Paulina Lazauskaite",
+  "page": "https://www.pexels.com/photo/outdoor-cooking-18285230/"
+ },
+ "l-zapekanka-kartofel-farsh": {
+  "photo_id": 33042510,
+  "author": "Meliha Ljaljic",
+  "page": "https://www.pexels.com/photo/golden-baked-cheese-and-potato-casserole-33042510/"
+ },
+ "l-sup-frikadelki": {
+  "photo_id": 38017797,
+  "author": "Muhammad  Khawar Nazir",
+  "page": "https://www.pexels.com/photo/delicious-homemade-meatball-soup-in-white-bowl-38017797/"
+ },
+ "l-indeika-bulgur": {
+  "photo_id": 19805188,
+  "author": "Anat Landa",
+  "page": "https://www.pexels.com/photo/19805188/"
+ },
+ "l-zapekanka-ris-tunec": {
+  "photo_id": 7625714,
+  "author": "Varun Chandak",
+  "page": "https://www.pexels.com/photo/white-ceramic-bowl-with-baked-food-7625714/"
+ },
+ "d-zapekanka-kabachki-farsh": {
+  "photo_id": 32039641,
+  "author": "Sylwester Ficek",
+  "page": "https://www.pexels.com/photo/cheesy-vegetable-baked-casserole-in-white-dish-32039641/"
+ },
+ "d-kurica-smetana-griby": {
+  "photo_id": 12916881,
+  "author": "Denys Gromov",
+  "page": "https://www.pexels.com/photo/fried-chicken-in-a-bowl-12916881/"
  }
 }
