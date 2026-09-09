@@ -1,0 +1,5240 @@
+[
+ {
+  "id": "b-omlet-tomat",
+  "meal": "breakfast",
+  "title": "Омлет с помидорами и сыром",
+  "active_min": 10,
+  "photo": "photos/b-omlet-tomat.jpg",
+  "query": "omelette with tomatoes and cheese on plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "помидоры",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 50,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Взбить яйца с молоком и солью",
+   "Обжарить нарезанные помидоры 2 минуты",
+   "Залить яйцами, посыпать сыром, накрыть крышкой на 5 минут"
+  ]
+ },
+ {
+  "id": "b-ovsyanka-banan",
+  "meal": "breakfast",
+  "title": "Овсянка с бананом и орехами",
+  "active_min": 10,
+  "photo": "photos/b-ovsyanka-banan.jpg",
+  "query": "oatmeal porridge with banana and nuts bowl",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 250,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить хлопья горячим молоком, щепотка соли",
+   "Варить 5 минут, помешивая",
+   "Сверху банан кружками, орехи и мёд"
+  ]
+ },
+ {
+  "id": "b-syrniki",
+  "meal": "breakfast",
+  "title": "Сырники из творога",
+  "active_min": 20,
+  "photo": "photos/b-syrniki.jpg",
+  "query": "cottage cheese pancakes syrniki with sour cream",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яйца",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "мука",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сахар",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Размять творог с яйцом, сахаром и солью",
+   "Вмешать муку, слепить лепёшки",
+   "Жарить по 3 минуты с каждой стороны",
+   "Подавать со сметаной"
+  ]
+ },
+ {
+  "id": "b-tvorog-yagody",
+  "meal": "breakfast",
+  "title": "Творог с ягодами и мёдом",
+  "active_min": 5,
+  "photo": "photos/b-tvorog-yagody.jpg",
+  "query": "cottage cheese with berries and honey bowl",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Разморозить ягоды 5 минут в тёплой воде",
+   "Выложить творог, сверху ягоды",
+   "Полить мёдом, посыпать орехами"
+  ]
+ },
+ {
+  "id": "b-yaichnica-bekon",
+  "meal": "breakfast",
+  "title": "Яичница с беконом и зеленью",
+  "active_min": 10,
+  "photo": "photos/b-yaichnica-bekon.jpg",
+  "query": "fried eggs with bacon on plate breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "бекон",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить бекон 3 минуты без масла",
+   "Разбить к нему яйца, жарить 4 минуты",
+   "Посыпать зеленью, подать с хлебом"
+  ]
+ },
+ {
+  "id": "b-tost-avokado",
+  "meal": "breakfast",
+  "title": "Тост с авокадо и яйцом",
+  "active_min": 15,
+  "photo": "photos/b-tost-avokado.jpg",
+  "query": "avocado toast slice bread breakfast",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "авокадо",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Подсушить хлеб в тостере",
+   "Размять авокадо с лимоном и солью",
+   "Сварить яйца всмятку 5 минут",
+   "Намазать авокадо, сверху яйцо"
+  ]
+ },
+ {
+  "id": "b-granola-yogurt",
+  "meal": "breakfast",
+  "title": "Йогурт с гранолой и ягодами",
+  "active_min": 5,
+  "photo": "photos/b-granola-yogurt.jpg",
+  "query": "yogurt granola berries breakfast bowl",
+  "ingredients": [
+   {
+    "name": "йогурт безлактозный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "гранола",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Разморозить ягоды",
+   "Выложить слоями йогурт и гранолу",
+   "Сверху ягоды и мёд"
+  ]
+ },
+ {
+  "id": "b-blinchiki",
+  "meal": "breakfast",
+  "title": "Тонкие блинчики",
+  "active_min": 20,
+  "photo": "photos/b-blinchiki.jpg",
+  "query": "thin crepes pancakes stack with sour cream",
+  "ingredients": [
+   {
+    "name": "мука",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 250,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Взбить яйца с молоком, сахаром и солью",
+   "Всыпать муку, размешать до однородности",
+   "Жарить по минуте с каждой стороны",
+   "Подавать со сметаной"
+  ]
+ },
+ {
+  "id": "b-grechka-moloko",
+  "meal": "breakfast",
+  "title": "Гречка на молоке",
+  "active_min": 10,
+  "photo": "photos/b-grechka-moloko.jpg",
+  "query": "buckwheat porridge bowl breakfast",
+  "ingredients": [
+   {
+    "name": "гречка",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 200,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить гречку водой 1:2, варить 15 минут под крышкой",
+   "Добавить горячее молоко, сахар и соль",
+   "Заправить сливочным маслом"
+  ]
+ },
+ {
+  "id": "b-omlet-shpinat",
+  "meal": "breakfast",
+  "title": "Омлет со шпинатом и сыром",
+  "active_min": 10,
+  "photo": "photos/b-omlet-shpinat.jpg",
+  "query": "spinach cheese omelette plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "шпинат",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Прогреть шпинат на сковороде 2 минуты",
+   "Залить взбитыми яйцами",
+   "Посыпать сыром, накрыть на 5 минут"
+  ]
+ },
+ {
+  "id": "b-zapekanka-tvorog",
+  "meal": "breakfast",
+  "title": "Творожная запеканка",
+  "active_min": 15,
+  "photo": "photos/b-zapekanka-tvorog.jpg",
+  "query": "baked cottage cheese casserole slice",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "изюм",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мука",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Смешать творог, яйца, сахар, муку и изюм",
+   "Выложить в форму",
+   "Духовка 180°C, 35 минут",
+   "Подавать со сметаной"
+  ]
+ },
+ {
+  "id": "b-smuzi-boul",
+  "meal": "breakfast",
+  "title": "Смузи-боул с бананом",
+  "active_min": 10,
+  "photo": "photos/b-smuzi-boul.jpg",
+  "query": "smoothie bowl banana berries granola",
+  "ingredients": [
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "йогурт безлактозный",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "гранола",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Пробить блендером банан, ягоды и йогурт",
+   "Вылить в миску",
+   "Сверху гранола и мёд"
+  ]
+ },
+ {
+  "id": "b-yaica-vsmyatku",
+  "meal": "breakfast",
+  "title": "Яйца всмятку с тостами",
+  "active_min": 10,
+  "photo": "photos/b-yaica-vsmyatku.jpg",
+  "query": "soft boiled eggs with toast soldiers breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Опустить яйца в кипяток на 5 минут",
+   "Подсушить хлеб, намазать маслом",
+   "Посолить яйца, посыпать зеленью"
+  ]
+ },
+ {
+  "id": "b-tortilya-yaica",
+  "meal": "breakfast",
+  "title": "Тортилья с яйцом и сыром",
+  "active_min": 12,
+  "photo": "photos/b-tortilya-yaica.jpg",
+  "query": "breakfast tortilla wrap with egg and cheese",
+  "ingredients": [
+   {
+    "name": "тортилья",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "помидоры",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Пожарить яичницу-болтунью 4 минуты",
+   "Выложить на тортилью с сыром и помидорами",
+   "Свернуть и подрумянить на сухой сковороде 2 минуты"
+  ]
+ },
+ {
+  "id": "b-ovsyanoblin",
+  "meal": "breakfast",
+  "title": "Овсяноблин с творогом",
+  "active_min": 15,
+  "photo": "photos/b-ovsyanoblin.jpg",
+  "query": "savory pancake roll with cheese filling",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 50,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Смолоть хлопья, смешать с яйцами и молоком",
+   "Вылить на сковороду, жарить 4 минуты под крышкой",
+   "Перевернуть, ещё 2 минуты",
+   "Намазать творожным сыром, посыпать зеленью, свернуть"
+  ]
+ },
+ {
+  "id": "b-risovaya-kasha",
+  "meal": "breakfast",
+  "title": "Рисовая каша с изюмом",
+  "active_min": 15,
+  "photo": "photos/b-risovaya-kasha.jpg",
+  "query": "rice pudding porridge with raisins bowl",
+  "ingredients": [
+   {
+    "name": "рис",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 300,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "изюм",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сахар",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить рис в воде 10 минут",
+   "Добавить молоко, сахар, соль и изюм",
+   "Томить 10 минут, заправить маслом"
+  ]
+ },
+ {
+  "id": "b-buterbrod-losos",
+  "meal": "breakfast",
+  "title": "Бутерброд с лососем",
+  "active_min": 5,
+  "photo": "photos/b-buterbrod-losos.jpg",
+  "query": "salmon cream cheese toast open sandwich",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лосось филе",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   }
+  ],
+  "steps": [
+   "Подсушить хлеб",
+   "Намазать творожным сыром",
+   "Выложить лосось, огурец и зелень, сбрызнуть лимоном"
+  ]
+ },
+ {
+  "id": "b-shakshuka",
+  "meal": "breakfast",
+  "title": "Шакшука",
+  "active_min": 20,
+  "photo": "photos/b-shakshuka.jpg",
+  "query": "shakshuka eggs in tomato sauce skillet",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "томаты в собственном соку",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук, перец и чеснок 5 минут",
+   "Добавить томаты и паприку, тушить 5 минут",
+   "Сделать лунки, разбить яйца",
+   "Под крышкой 7 минут, подать с хлебом"
+  ]
+ },
+ {
+  "id": "b-ovsyanye-pankeiki",
+  "meal": "breakfast",
+  "title": "Овсяные панкейки",
+  "active_min": 20,
+  "photo": "photos/b-ovsyanye-pankeiki.jpg",
+  "query": "stack of oat pancakes with honey",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 80,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "разрыхлитель",
+    "qty": 5,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Пробить блендером хлопья, банан, яйца и молоко",
+   "Добавить разрыхлитель",
+   "Жарить оладьи по 2 минуты с каждой стороны",
+   "Полить мёдом"
+  ]
+ },
+ {
+  "id": "b-yaichnica-gribami",
+  "meal": "breakfast",
+  "title": "Яичница с грибами",
+  "active_min": 15,
+  "photo": "photos/b-yaichnica-gribami.jpg",
+  "query": "fried eggs with mushrooms skillet breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "шампиньоны",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук и грибы 7 минут",
+   "Разбить сверху яйца",
+   "Жарить под крышкой 4 минуты, посыпать зеленью"
+  ]
+ },
+ {
+  "id": "b-kuskus-yabloko",
+  "meal": "breakfast",
+  "title": "Кускус с яблоком и корицей",
+  "active_min": 10,
+  "photo": "photos/b-kuskus-yabloko.jpg",
+  "query": "couscous breakfast bowl spoon",
+  "ingredients": [
+   {
+    "name": "кускус",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 150,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яблоко",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "корица",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить кускус горячим молоком, накрыть на 5 минут",
+   "Обжарить яблоко кубиками с маслом и корицей 4 минуты",
+   "Смешать, полить мёдом"
+  ]
+ },
+ {
+  "id": "b-tvorog-ogurec",
+  "meal": "breakfast",
+  "title": "Творог с огурцом и зеленью",
+  "active_min": 5,
+  "photo": "photos/b-tvorog-ogurec.jpg",
+  "query": "cottage cheese bowl with fresh herbs",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать огурец и зелень",
+   "Смешать с творогом и сметаной, посолить",
+   "Подать с хлебом"
+  ]
+ },
+ {
+  "id": "b-frittata-ovoshi",
+  "meal": "breakfast",
+  "title": "Фриттата с овощами",
+  "active_min": 15,
+  "photo": "photos/b-frittata-ovoshi.jpg",
+  "query": "frittata in pan with vegetables",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 4,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить перец 4 минуты в форме для духовки",
+   "Залить взбитыми яйцами, добавить черри и сыр",
+   "Духовка 180°C, 15 минут"
+  ]
+ },
+ {
+  "id": "b-lenivaya-ovsyanka",
+  "meal": "breakfast",
+  "title": "Ленивая овсянка на кефире",
+  "active_min": 5,
+  "photo": "photos/b-lenivaya-ovsyanka.jpg",
+  "query": "overnight oats jar with berries",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "кефир безлактозный",
+    "qty": 200,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "С вечера залить хлопья кефиром в банке",
+   "Добавить ягоды и мёд, убрать в холодильник",
+   "Утром посыпать орехами"
+  ]
+ },
+ {
+  "id": "b-tost-arahis-banan",
+  "meal": "breakfast",
+  "title": "Тост с арахисовой пастой и бананом",
+  "active_min": 5,
+  "photo": "photos/b-tost-arahis-banan.jpg",
+  "query": "peanut butter banana toast",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "арахисовая паста",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "корица",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Подсушить хлеб в тостере",
+   "Намазать арахисовой пастой",
+   "Выложить банан кружками, полить мёдом, присыпать корицей"
+  ]
+ },
+ {
+  "id": "b-omlet-vetchina",
+  "meal": "breakfast",
+  "title": "Омлет с ветчиной",
+  "active_min": 10,
+  "photo": "photos/b-omlet-vetchina.jpg",
+  "query": "omelette with ham and cheese on plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "ветчина",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 50,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить ветчину кубиками 3 минуты",
+   "Залить яйцами с молоком",
+   "Посыпать сыром, под крышкой 5 минут"
+  ]
+ },
+ {
+  "id": "b-pshenka-tykva",
+  "meal": "breakfast",
+  "title": "Пшённая каша с тыквой",
+  "active_min": 15,
+  "photo": "photos/b-pshenka-tykva.jpg",
+  "query": "pumpkin porridge in bowl",
+  "ingredients": [
+   {
+    "name": "пшено",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "тыква",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 250,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить тыкву кубиками 10 минут",
+   "Добавить промытое пшено и молоко",
+   "Варить 15 минут под крышкой, заправить маслом"
+  ]
+ },
+ {
+  "id": "b-salat-yaico-avokado",
+  "meal": "breakfast",
+  "title": "Салат с яйцом и авокадо",
+  "active_min": 10,
+  "photo": "photos/b-salat-yaico-avokado.jpg",
+  "query": "egg avocado salad bowl breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "авокадо",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить яйца 8 минут, остудить",
+   "Нарезать авокадо, черри и салат",
+   "Смешать, заправить маслом с лимоном"
+  ]
+ },
+ {
+  "id": "b-roll-lavash-tvorog",
+  "meal": "breakfast",
+  "title": "Ролл из лаваша с творогом",
+  "active_min": 10,
+  "photo": "photos/b-roll-lavash-tvorog.jpg",
+  "query": "tortilla wrap sliced rolls on board",
+  "ingredients": [
+   {
+    "name": "лаваш",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "ветчина",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Намазать лаваш творожным сыром",
+   "Выложить ветчину, огурец соломкой и зелень",
+   "Свернуть рулетом, нарезать наискосок"
+  ]
+ },
+ {
+  "id": "b-goryachiy-buterbrod",
+  "meal": "breakfast",
+  "title": "Горячий бутерброд с сыром",
+  "active_min": 10,
+  "photo": "photos/b-goryachiy-buterbrod.jpg",
+  "query": "grilled cheese tomato sandwich melted",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "помидоры",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "ветчина",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Собрать бутерброды: хлеб, ветчина, помидор, сыр",
+   "Обжарить на сливочном масле под крышкой 4 минуты",
+   "Перевернуть, ещё 3 минуты до расплавленного сыра"
+  ]
+ },
+ {
+  "id": "l-kurica-grechka",
+  "meal": "lunch",
+  "title": "Курица с гречкой и овощами",
+  "active_min": 15,
+  "photo": "photos/l-kurica-grechka.jpg",
+  "query": "buckwheat with chicken on plate",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "гречка",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Поставить гречку вариться 20 минут",
+   "Обжарить курицу кубиками 7 минут",
+   "Добавить лук и морковь, тушить 5 минут",
+   "Смешать с гречкой"
+  ]
+ },
+ {
+  "id": "l-sup-kurinyi",
+  "meal": "lunch",
+  "title": "Куриный суп с лапшой",
+  "active_min": 20,
+  "photo": "photos/l-sup-kurinyi.jpg",
+  "query": "chicken noodle soup bowl",
+  "ingredients": [
+   {
+    "name": "куриные бёдра",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "лапша",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "картофель",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Варить бёдра 25 минут, снять пену",
+   "Добавить картофель, морковь и лук, варить 10 минут",
+   "Всыпать лапшу, варить 5 минут",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "l-pasta-bolonez",
+  "meal": "lunch",
+  "title": "Паста болоньезе",
+  "active_min": 20,
+  "photo": "photos/l-pasta-bolonez.jpg",
+  "query": "spaghetti bolognese plate",
+  "ingredients": [
+   {
+    "name": "макароны",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "фарш говяжий",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "томаты в собственном соку",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орегано",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Поставить макароны вариться",
+   "Обжарить лук с чесноком, добавить фарш, 7 минут",
+   "Влить томаты, тушить 10 минут",
+   "Смешать с макаронами, посыпать сыром"
+  ]
+ },
+ {
+  "id": "l-plov-kurica",
+  "meal": "lunch",
+  "title": "Плов с курицей на сковороде",
+  "active_min": 20,
+  "photo": "photos/l-plov-kurica.jpg",
+  "query": "pilaf rice with meat and carrots",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "рис",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "морковь",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "куркума",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить курицу 5 минут",
+   "Добавить лук и морковь соломкой, 5 минут",
+   "Всыпать рис, залить водой на 2 пальца, добавить куркуму",
+   "Под крышкой 20 минут не мешать"
+  ]
+ },
+ {
+  "id": "l-ris-krevetki",
+  "meal": "lunch",
+  "title": "Рис с креветками и овощами",
+  "active_min": 15,
+  "photo": "photos/l-ris-krevetki.jpg",
+  "query": "shrimp fried rice with vegetables",
+  "ingredients": [
+   {
+    "name": "креветки",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "рис",
+    "qty": 90,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "горошек зелёный замороженный",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соевый соус",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Отварить рис 15 минут",
+   "Обжарить чеснок и перец 3 минуты",
+   "Добавить креветки и горошек, 4 минуты",
+   "Всыпать рис, влить соевый соус, прогреть 3 минуты"
+  ]
+ },
+ {
+  "id": "l-sup-tomatnyi",
+  "meal": "lunch",
+  "title": "Томатный суп с фасолью",
+  "active_min": 15,
+  "photo": "photos/l-sup-tomatnyi.jpg",
+  "query": "tomato bean soup bowl rustic",
+  "ingredients": [
+   {
+    "name": "томаты в собственном соку",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "фасоль консервированная",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук, морковь и чеснок 6 минут",
+   "Влить томаты и 400 мл воды, варить 10 минут",
+   "Добавить фасоль, прогреть 5 минут",
+   "Подать с хлебом"
+  ]
+ },
+ {
+  "id": "l-kotlety-indeika-pyure",
+  "meal": "lunch",
+  "title": "Котлеты из индейки с пюре",
+  "active_min": 20,
+  "photo": "photos/l-kotlety-indeika-pyure.jpg",
+  "query": "turkey cutlets with mashed potatoes plate",
+  "ingredients": [
+   {
+    "name": "фарш индейки",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "картофель",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 60,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сухари панировочные",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Поставить картофель вариться 20 минут",
+   "Смешать фарш с тёртым луком, яйцом и солью",
+   "Слепить котлеты, обвалять в сухарях, жарить по 5 минут с каждой стороны",
+   "Растолочь картофель с молоком и маслом"
+  ]
+ },
+ {
+  "id": "l-salat-cezar",
+  "meal": "lunch",
+  "title": "Салат «Цезарь» с курицей",
+  "active_min": 15,
+  "photo": "photos/l-salat-cezar.jpg",
+  "query": "caesar salad romaine parmesan croutons",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "майонез",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 5,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить курицу полосками 8 минут",
+   "Подсушить кубики хлеба на сухой сковороде 4 минуты",
+   "Смешать майонез с чесноком",
+   "Собрать салат, посыпать тёртым сыром"
+  ]
+ },
+ {
+  "id": "l-boul-kinoa",
+  "meal": "lunch",
+  "title": "Боул с киноа и курицей",
+  "active_min": 20,
+  "photo": "photos/l-boul-kinoa.jpg",
+  "query": "quinoa bowl with chicken avocado vegetables",
+  "ingredients": [
+   {
+    "name": "киноа",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "куриное филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "авокадо",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "огурцы",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить киноа 15 минут",
+   "Обжарить курицу кубиками 8 минут",
+   "Нарезать овощи и авокадо",
+   "Собрать в миске, заправить маслом с лимоном"
+  ]
+ },
+ {
+  "id": "l-losos-bulgur",
+  "meal": "lunch",
+  "title": "Лосось с булгуром",
+  "active_min": 15,
+  "photo": "photos/l-losos-bulgur.jpg",
+  "query": "salmon fillet with bulgur and lemon plate",
+  "ingredients": [
+   {
+    "name": "лосось филе",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "булгур",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить булгур кипятком 1:2, накрыть на 15 минут",
+   "Посолить лосось, сбрызнуть лимоном",
+   "Жарить кожей вниз 5 минут, перевернуть на 3 минуты",
+   "Подать с булгуром и зеленью"
+  ]
+ },
+ {
+  "id": "l-sup-chechevica",
+  "meal": "lunch",
+  "title": "Суп из красной чечевицы",
+  "active_min": 15,
+  "photo": "photos/l-sup-chechevica.jpg",
+  "query": "red lentil soup bowl",
+  "ingredients": [
+   {
+    "name": "чечевица красная",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "морковь",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "картофель",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "куркума",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук, морковь и чеснок 6 минут",
+   "Добавить картофель, чечевицу и 800 мл воды",
+   "Варить 20 минут, пробить блендером",
+   "Сбрызнуть лимоном"
+  ]
+ },
+ {
+  "id": "l-kurica-ovoshi-duhovka",
+  "meal": "lunch",
+  "title": "Курица с овощами в духовке",
+  "active_min": 15,
+  "photo": "photos/l-kurica-ovoshi-duhovka.jpg",
+  "query": "roasted chicken thighs with vegetables baking tray",
+  "ingredients": [
+   {
+    "name": "куриные бёдра",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "картофель",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать овощи крупно",
+   "Смешать всё с маслом, паприкой и солью прямо на противне",
+   "Духовка 200°C, 45 минут"
+  ]
+ },
+ {
+  "id": "l-pasta-losos",
+  "meal": "lunch",
+  "title": "Паста с лососем в сливках",
+  "active_min": 20,
+  "photo": "photos/l-pasta-losos.jpg",
+  "query": "creamy salmon pasta plate",
+  "ingredients": [
+   {
+    "name": "макароны",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лосось филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "сливки безлактозные",
+    "qty": 150,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Поставить макароны вариться",
+   "Обжарить чеснок, добавить лосось кубиками, 5 минут",
+   "Влить сливки, томить 5 минут",
+   "Смешать с макаронами, посыпать сыром и зеленью"
+  ]
+ },
+ {
+  "id": "l-govyadina-ris-azia",
+  "meal": "lunch",
+  "title": "Говядина с рисом по-азиатски",
+  "active_min": 20,
+  "photo": "photos/l-govyadina-ris-azia.jpg",
+  "query": "asian beef stir fry with rice",
+  "ingredients": [
+   {
+    "name": "говядина",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "рис",
+    "qty": 90,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соевый соус",
+    "qty": 30,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "крахмал",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Отварить рис 15 минут",
+   "Нарезать говядину тонкими полосками, обвалять в крахмале",
+   "Жарить на сильном огне 5 минут",
+   "Добавить овощи, соевый соус и мёд, ещё 5 минут"
+  ]
+ },
+ {
+  "id": "l-sup-gribnoi",
+  "meal": "lunch",
+  "title": "Грибной суп-пюре",
+  "active_min": 20,
+  "photo": "photos/l-sup-gribnoi.jpg",
+  "query": "creamy mushroom soup bowl",
+  "ingredients": [
+   {
+    "name": "шампиньоны",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "картофель",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сливки безлактозные",
+    "qty": 100,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук и грибы на масле 10 минут",
+   "Добавить картофель и 700 мл воды, варить 15 минут",
+   "Пробить блендером, влить сливки",
+   "Подать с подсушенным хлебом"
+  ]
+ },
+ {
+  "id": "l-tortilya-kurica",
+  "meal": "lunch",
+  "title": "Тортильи с курицей и овощами",
+  "active_min": 15,
+  "photo": "photos/l-tortilya-kurica.jpg",
+  "query": "chicken tortilla wraps with vegetables",
+  "ingredients": [
+   {
+    "name": "тортилья",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "куриное филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "помидоры",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить курицу полосками с паприкой 8 минут",
+   "Намазать тортильи сметаной",
+   "Выложить курицу, овощи и сыр, свернуть",
+   "Подрумянить на сухой сковороде 2 минуты"
+  ]
+ },
+ {
+  "id": "l-treska-kartofel",
+  "meal": "lunch",
+  "title": "Треска с картофелем в духовке",
+  "active_min": 15,
+  "photo": "photos/l-treska-kartofel.jpg",
+  "query": "baked white fish fillet with potatoes plate",
+  "ingredients": [
+   {
+    "name": "треска филе",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "картофель",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать картофель кружками, выложить на противень с маслом",
+   "Духовка 200°C, 20 минут",
+   "Сверху рыбу со сметаной и лимоном, ещё 20 минут",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "l-salat-tunec-fasol",
+  "meal": "lunch",
+  "title": "Салат с тунцом и фасолью",
+  "active_min": 10,
+  "photo": "photos/l-salat-tunec-fasol.jpg",
+  "query": "tuna salad with beans and tomatoes",
+  "ingredients": [
+   {
+    "name": "тунец консервированный",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "фасоль консервированная",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Слить жидкость с тунца и фасоли",
+   "Нарезать черри, лук и салат",
+   "Смешать всё, заправить маслом с лимоном"
+  ]
+ },
+ {
+  "id": "l-gulyash-indeika",
+  "meal": "lunch",
+  "title": "Гуляш из индейки с булгуром",
+  "active_min": 20,
+  "photo": "photos/l-gulyash-indeika.jpg",
+  "query": "turkey goulash stew with bulgur",
+  "ingredients": [
+   {
+    "name": "филе индейки",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "булгур",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "томатная паста",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "мука",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить индейку кубиками 7 минут",
+   "Добавить лук и морковь, 5 минут",
+   "Всыпать муку, добавить пасту, сметану и 200 мл воды",
+   "Тушить 15 минут, булгур запарить кипятком"
+  ]
+ },
+ {
+  "id": "l-lenivaya-lazanya",
+  "meal": "lunch",
+  "title": "Ленивая лазанья на сковороде",
+  "active_min": 20,
+  "photo": "photos/l-lenivaya-lazanya.jpg",
+  "query": "lasagna portion on plate with cheese",
+  "ingredients": [
+   {
+    "name": "макароны",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "фарш говяжий",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "томаты в собственном соку",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "моцарелла безлактозная",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орегано",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук с фаршем 8 минут",
+   "Добавить томаты, орегано и 150 мл воды",
+   "Всыпать сухие макароны, тушить под крышкой 15 минут",
+   "Посыпать моцареллой, накрыть на 3 минуты"
+  ]
+ },
+ {
+  "id": "l-borsch-bystryi",
+  "meal": "lunch",
+  "title": "Быстрый борщ",
+  "active_min": 20,
+  "photo": "photos/l-borsch-bystryi.jpg",
+  "query": "borscht beet soup bowl with sour cream",
+  "ingredients": [
+   {
+    "name": "говядина",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "свёкла",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "капуста белокочанная",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "картофель",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "томатная паста",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Варить мясо 40 минут",
+   "Натереть свёклу и морковь, обжарить с пастой 8 минут",
+   "Добавить в бульон картофель и капусту, 15 минут",
+   "Ввести зажарку, дать закипеть, подать со сметаной"
+  ]
+ },
+ {
+  "id": "l-kurica-teriyaki",
+  "meal": "lunch",
+  "title": "Курица терияки с кускусом",
+  "active_min": 15,
+  "photo": "photos/l-kurica-teriyaki.jpg",
+  "query": "teriyaki chicken with couscous and sesame",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "кускус",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соевый соус",
+    "qty": 30,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "кунжут",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук зелёный",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   }
+  ],
+  "steps": [
+   "Залить кускус кипятком 1:1, накрыть на 5 минут",
+   "Обжарить курицу кусочками 8 минут",
+   "Влить соевый соус с мёдом и чесноком, выпарить 3 минуты",
+   "Посыпать кунжутом и зелёным луком"
+  ]
+ },
+ {
+  "id": "l-frikadelki-tomat",
+  "meal": "lunch",
+  "title": "Фрикадельки в томатном соусе",
+  "active_min": 20,
+  "photo": "photos/l-frikadelki-tomat.jpg",
+  "query": "meatballs in tomato sauce skillet",
+  "ingredients": [
+   {
+    "name": "фарш куриный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "рис",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "томаты в собственном соку",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орегано",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить рис 10 минут, смешать с фаршем, яйцом и луком",
+   "Слепить шарики",
+   "Обжарить 5 минут, влить томаты",
+   "Тушить под крышкой 15 минут"
+  ]
+ },
+ {
+  "id": "l-zharenyi-ris-yaico",
+  "meal": "lunch",
+  "title": "Жареный рис с яйцом и овощами",
+  "active_min": 15,
+  "photo": "photos/l-zharenyi-ris-yaico.jpg",
+  "query": "fried rice with egg in pan",
+  "ingredients": [
+   {
+    "name": "рис",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "горошек зелёный замороженный",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук зелёный",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соевый соус",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   }
+  ],
+  "steps": [
+   "Отварить рис заранее и остудить",
+   "Обжарить морковь с чесноком 4 минуты",
+   "Сдвинуть, влить яйца, размешать",
+   "Всыпать рис и горошек, соевый соус, жарить 5 минут"
+  ]
+ },
+ {
+  "id": "l-svinina-ovoshi",
+  "meal": "lunch",
+  "title": "Свинина с овощами на сковороде",
+  "active_min": 20,
+  "photo": "photos/l-svinina-ovoshi.jpg",
+  "query": "pork stir fry with vegetables skillet",
+  "ingredients": [
+   {
+    "name": "свинина",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "картофель",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "томатная паста",
+    "qty": 25,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить свинину кусочками 8 минут",
+   "Добавить картофель кубиками, 5 минут",
+   "Добавить лук, перец, пасту и 150 мл воды",
+   "Тушить под крышкой 20 минут"
+  ]
+ },
+ {
+  "id": "l-sup-syrnyi",
+  "meal": "lunch",
+  "title": "Сырный суп с курицей",
+  "active_min": 20,
+  "photo": "photos/l-sup-syrnyi.jpg",
+  "query": "creamy cheese soup with chicken bowl",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "картофель",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сливки безлактозные",
+    "qty": 100,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить курицу кубиками 15 минут",
+   "Добавить картофель, лук и морковь, варить 15 минут",
+   "Всыпать тёртый сыр, влить сливки, размешать до растворения",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "l-teplyi-salat-govyadina",
+  "meal": "lunch",
+  "title": "Тёплый салат с говядиной",
+  "active_min": 15,
+  "photo": "photos/l-teplyi-salat-govyadina.jpg",
+  "query": "warm beef salad with arugula and tomatoes",
+  "ingredients": [
+   {
+    "name": "говядина",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "руккола",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "уксус бальзамический",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить говядину полосками на сильном огне 6 минут",
+   "Добавить перец и чеснок, 3 минуты",
+   "Выложить на рукколу с черри",
+   "Заправить маслом с бальзамиком"
+  ]
+ },
+ {
+  "id": "l-nut-kari",
+  "meal": "lunch",
+  "title": "Нут карри с рисом",
+  "active_min": 15,
+  "photo": "photos/l-nut-kari.jpg",
+  "query": "chickpea curry with rice bowl",
+  "ingredients": [
+   {
+    "name": "нут консервированный",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "рис",
+    "qty": 90,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "кокосовое молоко",
+    "qty": 200,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "томатная паста",
+    "qty": 25,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "карри паста",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить рис 15 минут",
+   "Обжарить лук с чесноком и карри 5 минут",
+   "Влить кокосовое молоко и пасту, добавить нут",
+   "Томить 10 минут, подать с рисом"
+  ]
+ },
+ {
+  "id": "l-zapekanka-makarony",
+  "meal": "lunch",
+  "title": "Запеканка из макарон с фаршем",
+  "active_min": 15,
+  "photo": "photos/l-zapekanka-makarony.jpg",
+  "query": "baked pasta casserole with minced meat and cheese",
+  "ingredients": [
+   {
+    "name": "макароны",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "фарш говяжий",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 100,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить макароны до полуготовности",
+   "Обжарить лук с фаршем 8 минут",
+   "Смешать всё в форме, залить яйцами с молоком",
+   "Посыпать сыром, духовка 190°C, 25 минут"
+  ]
+ },
+ {
+  "id": "l-kurica-airfryer",
+  "meal": "lunch",
+  "title": "Курица с картофелем в аэрогриле",
+  "active_min": 10,
+  "photo": "photos/l-kurica-airfryer.jpg",
+  "query": "air fryer chicken and potato wedges",
+  "ingredients": [
+   {
+    "name": "куриные бёдра",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "картофель",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать картофель дольками",
+   "Смешать всё с маслом и специями в пакете",
+   "Аэрогриль 190°C, 25 минут, встряхнуть в середине"
+  ]
+ },
+ {
+  "id": "d-losos-brokkoli",
+  "meal": "dinner",
+  "title": "Лосось с брокколи",
+  "active_min": 15,
+  "photo": "photos/d-losos-brokkoli.jpg",
+  "query": "baked salmon with broccoli plate dinner",
+  "ingredients": [
+   {
+    "name": "лосось филе",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "брокколи",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Разобрать брокколи на соцветия",
+   "Выложить с рыбой на противень, полить маслом с чесноком",
+   "Духовка 200°C, 20 минут",
+   "Сбрызнуть лимоном"
+  ]
+ },
+ {
+  "id": "d-kurica-salat",
+  "meal": "dinner",
+  "title": "Куриная грудка с овощным салатом",
+  "active_min": 15,
+  "photo": "photos/d-kurica-salat.jpg",
+  "query": "grilled chicken breast with fresh vegetable salad",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "помидоры",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "огурцы",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отбить филе, посолить и поперчить",
+   "Жарить по 6 минут с каждой стороны",
+   "Нарезать овощи, заправить маслом с лимоном"
+  ]
+ },
+ {
+  "id": "d-omlet-ovoshi",
+  "meal": "dinner",
+  "title": "Овощной омлет на ужин",
+  "active_min": 10,
+  "photo": "photos/d-omlet-ovoshi.jpg",
+  "query": "vegetable omelette dinner plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "кабачок",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить кабачок кубиками 5 минут",
+   "Добавить черри, залить яйцами",
+   "Посыпать сыром, под крышкой 6 минут",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "d-treska-ovoshi",
+  "meal": "dinner",
+  "title": "Треска с тушёными овощами",
+  "active_min": 15,
+  "photo": "photos/d-treska-ovoshi.jpg",
+  "query": "steamed cod fillet with vegetables plate",
+  "ingredients": [
+   {
+    "name": "треска филе",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "морковь",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "кабачок",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать овощи, тушить под крышкой 12 минут",
+   "Сверху положить рыбу, посолить",
+   "Ещё 12 минут под крышкой",
+   "Сбрызнуть лимоном"
+  ]
+ },
+ {
+  "id": "d-indeika-kabachki",
+  "meal": "dinner",
+  "title": "Индейка с кабачками",
+  "active_min": 15,
+  "photo": "photos/d-indeika-kabachki.jpg",
+  "query": "cooked turkey with zucchini on plate",
+  "ingredients": [
+   {
+    "name": "филе индейки",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "кабачок",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить индейку кубиками 7 минут",
+   "Добавить лук и кабачок, 7 минут",
+   "Влить сметану, тушить 5 минут",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "d-grecheskiy-salat",
+  "meal": "dinner",
+  "title": "Греческий салат с сыром",
+  "active_min": 10,
+  "photo": "photos/d-grecheskiy-salat.jpg",
+  "query": "greek salad with feta cheese olives bowl",
+  "ingredients": [
+   {
+    "name": "помидоры",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "огурцы",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орегано",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать овощи крупными кусками",
+   "Добавить сыр кубиками",
+   "Заправить маслом, посыпать орегано",
+   "Подать с хлебом"
+  ]
+ },
+ {
+  "id": "d-rybnye-kotlety",
+  "meal": "dinner",
+  "title": "Рыбные котлеты",
+  "active_min": 20,
+  "photo": "photos/d-rybnye-kotlety.jpg",
+  "query": "fish cakes patties on plate with herbs",
+  "ingredients": [
+   {
+    "name": "минтай филе",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сухари панировочные",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Пробить рыбу с луком в блендере",
+   "Смешать с яйцом, зеленью и половиной сухарей",
+   "Слепить котлеты, обвалять в сухарях",
+   "Жарить по 5 минут с каждой стороны"
+  ]
+ },
+ {
+  "id": "d-ovoshi-zapechennye-sir",
+  "meal": "dinner",
+  "title": "Овощи запечённые с сыром",
+  "active_min": 15,
+  "photo": "photos/d-ovoshi-zapechennye-sir.jpg",
+  "query": "baked vegetables with melted cheese dish",
+  "ingredients": [
+   {
+    "name": "баклажан",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "кабачок",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орегано",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать овощи кружками, выложить в форму внахлёст",
+   "Полить маслом с чесноком, посолить",
+   "Духовка 190°C, 30 минут",
+   "Посыпать сыром, ещё 10 минут"
+  ]
+ },
+ {
+  "id": "d-salat-krevetki-avokado",
+  "meal": "dinner",
+  "title": "Салат с креветками и авокадо",
+  "active_min": 15,
+  "photo": "photos/d-salat-krevetki-avokado.jpg",
+  "query": "shrimp avocado salad bowl",
+  "ingredients": [
+   {
+    "name": "креветки",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "авокадо",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 5,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить креветки с чесноком 4 минуты",
+   "Нарезать авокадо, черри и салат",
+   "Смешать, заправить маслом с лимоном"
+  ]
+ },
+ {
+  "id": "d-kurica-brokkoli-airfryer",
+  "meal": "dinner",
+  "title": "Курица с брокколи в аэрогриле",
+  "active_min": 10,
+  "photo": "photos/d-kurica-brokkoli-airfryer.jpg",
+  "query": "air fryer chicken with broccoli",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "брокколи",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соевый соус",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "кунжут",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать курицу кубиками, замариновать в соевом соусе с чесноком",
+   "Выложить в корзину с брокколи и маслом",
+   "Аэрогриль 190°C, 18 минут",
+   "Посыпать кунжутом"
+  ]
+ },
+ {
+  "id": "d-farshirovannye-percy",
+  "meal": "dinner",
+  "title": "Фаршированные перцы",
+  "active_min": 20,
+  "photo": "photos/d-farshirovannye-percy.jpg",
+  "query": "stuffed bell peppers with rice and meat",
+  "ingredients": [
+   {
+    "name": "перец болгарский",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "фарш куриный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "рис",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "томатная паста",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить рис 10 минут, смешать с фаршем и луком",
+   "Начинить перцы",
+   "Залить водой с пастой и сметаной",
+   "Тушить под крышкой 35 минут"
+  ]
+ },
+ {
+  "id": "d-gorbusha-duhovka",
+  "meal": "dinner",
+  "title": "Горбуша в духовке с лимоном",
+  "active_min": 10,
+  "photo": "photos/d-gorbusha-duhovka.jpg",
+  "query": "baked pink salmon with lemon slices",
+  "ingredients": [
+   {
+    "name": "горбуша",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Выложить рыбу на фольгу, посолить",
+   "Сверху лук кольцами, сметана и лимон",
+   "Духовка 190°C, 25 минут",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "d-tefteli-ovoshi",
+  "meal": "dinner",
+  "title": "Тефтели с овощным гарниром",
+  "active_min": 20,
+  "photo": "photos/d-tefteli-ovoshi.jpg",
+  "query": "meatballs with green beans on plate",
+  "ingredients": [
+   {
+    "name": "фарш индейки",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "стручковая фасоль замороженная",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сухари панировочные",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Смешать фарш с луком, яйцом и сухарями",
+   "Слепить тефтели, жарить 12 минут под крышкой",
+   "Отдельно обжарить фасоль с чесноком 8 минут"
+  ]
+ },
+ {
+  "id": "d-salat-kurica-avokado",
+  "meal": "dinner",
+  "title": "Салат с курицей и авокадо",
+  "active_min": 12,
+  "photo": "photos/d-salat-kurica-avokado.jpg",
+  "query": "chicken avocado salad plate",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "авокадо",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "огурцы",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "руккола",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "йогурт безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить курицу полосками 8 минут",
+   "Нарезать авокадо, огурец и рукколу",
+   "Смешать йогурт с лимоном и маслом",
+   "Заправить салат"
+  ]
+ },
+ {
+  "id": "d-kabachki-gril",
+  "meal": "dinner",
+  "title": "Кабачки гриль с творожным соусом",
+  "active_min": 15,
+  "photo": "photos/d-kabachki-gril.jpg",
+  "query": "grilled zucchini slices on plate",
+  "ingredients": [
+   {
+    "name": "кабачок",
+    "qty": 400,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать кабачки пластинами, смазать маслом",
+   "Жарить на сухой сковороде-гриль по 3 минуты",
+   "Смешать творожный сыр с чесноком и зеленью",
+   "Выложить соус на кабачки, посыпать орехами"
+  ]
+ },
+ {
+  "id": "d-mintai-ovoshi",
+  "meal": "dinner",
+  "title": "Минтай с тушёными овощами",
+  "active_min": 20,
+  "photo": "photos/d-mintai-ovoshi.jpg",
+  "query": "white fish fillet with stewed vegetables",
+  "ingredients": [
+   {
+    "name": "минтай филе",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "морковь",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "томатная паста",
+    "qty": 25,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мука",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обвалять рыбу в муке, обжарить по 3 минуты",
+   "Отдельно обжарить лук с морковью 7 минут",
+   "Добавить пасту и 150 мл воды",
+   "Выложить рыбу, тушить 10 минут"
+  ]
+ },
+ {
+  "id": "d-kurinye-shashlychki",
+  "meal": "dinner",
+  "title": "Куриные шашлычки в аэрогриле",
+  "active_min": 15,
+  "photo": "photos/d-kurinye-shashlychki.jpg",
+  "query": "cooked chicken skewers on plate",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "йогурт безлактозный",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Замариновать курицу в йогурте с чесноком и паприкой 10 минут",
+   "Нанизать с перцем и луком на шпажки",
+   "Аэрогриль 200°C, 15 минут, перевернуть в середине"
+  ]
+ },
+ {
+  "id": "d-salat-tunec-yaico",
+  "meal": "dinner",
+  "title": "Салат с тунцом и яйцом",
+  "active_min": 10,
+  "photo": "photos/d-salat-tunec-yaico.jpg",
+  "query": "tuna egg salad plate with lettuce",
+  "ingredients": [
+   {
+    "name": "тунец консервированный",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "кукуруза консервированная",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "майонез",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лук зелёный",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить яйца 8 минут",
+   "Нарезать огурец, салат и яйца",
+   "Смешать с тунцом и кукурузой",
+   "Заправить майонезом, посыпать луком"
+  ]
+ },
+ {
+  "id": "d-ovoshnoe-ragu",
+  "meal": "dinner",
+  "title": "Овощное рагу",
+  "active_min": 20,
+  "photo": "photos/d-ovoshnoe-ragu.jpg",
+  "query": "vegetable stew ratatouille in pot",
+  "ingredients": [
+   {
+    "name": "кабачок",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "баклажан",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "картофель",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук и картофель 7 минут",
+   "Добавить баклажан, кабачок и перец, 7 минут",
+   "Добавить помидоры и чеснок, тушить под крышкой 20 минут",
+   "Посыпать зеленью"
+  ]
+ },
+ {
+  "id": "d-indeika-stroganov",
+  "meal": "dinner",
+  "title": "Индейка строганов",
+  "active_min": 20,
+  "photo": "photos/d-indeika-stroganov.jpg",
+  "query": "turkey stroganoff in cream sauce skillet",
+  "ingredients": [
+   {
+    "name": "филе индейки",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "шампиньоны",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "мука",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "горчица",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить индейку полосками 6 минут",
+   "Добавить лук и грибы, 7 минут",
+   "Всыпать муку, влить сметану с горчицей и 100 мл воды",
+   "Тушить 10 минут, посыпать зеленью"
+  ]
+ },
+ {
+  "id": "d-zapekanka-brokkoli",
+  "meal": "dinner",
+  "title": "Запеканка из брокколи с яйцом",
+  "active_min": 15,
+  "photo": "photos/d-zapekanka-brokkoli.jpg",
+  "query": "broccoli cheese egg bake casserole",
+  "ingredients": [
+   {
+    "name": "брокколи",
+    "qty": 350,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 4,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 100,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить брокколи 5 минут, слить",
+   "Выложить в смазанную форму",
+   "Залить яйцами с молоком, посыпать сыром",
+   "Духовка 190°C, 25 минут"
+  ]
+ },
+ {
+  "id": "d-losos-shpinat",
+  "meal": "dinner",
+  "title": "Лосось со шпинатом в сливках",
+  "active_min": 15,
+  "photo": "photos/d-losos-shpinat.jpg",
+  "query": "salmon with creamy spinach sauce skillet",
+  "ingredients": [
+   {
+    "name": "лосось филе",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "шпинат",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сливки безлактозные",
+    "qty": 150,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лосось по 4 минуты с каждой стороны, убрать",
+   "В той же сковороде чеснок и шпинат, 3 минуты",
+   "Влить сливки, выпарить 4 минуты",
+   "Вернуть рыбу, сбрызнуть лимоном"
+  ]
+ },
+ {
+  "id": "d-salat-svekla-sir",
+  "meal": "dinner",
+  "title": "Салат из свёклы с сыром и орехами",
+  "active_min": 10,
+  "photo": "photos/d-salat-svekla-sir.jpg",
+  "query": "beetroot salad with cheese and walnuts",
+  "ingredients": [
+   {
+    "name": "свёкла",
+    "qty": 300,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 5,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "руккола",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить свёклу заранее или взять готовую",
+   "Натереть на крупной тёрке",
+   "Смешать с чесноком, маслом и солью",
+   "Выложить на рукколу, посыпать сыром и орехами"
+  ]
+ },
+ {
+  "id": "d-kurica-mocarella",
+  "meal": "dinner",
+  "title": "Курица с помидорами и моцареллой",
+  "active_min": 15,
+  "photo": "photos/d-kurica-mocarella.jpg",
+  "query": "baked chicken with mozzarella and tomato",
+  "ingredients": [
+   {
+    "name": "куриное филе",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "помидоры",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "моцарелла безлактозная",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "орегано",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Надрезать филе вдоль, посолить",
+   "Выложить в форму, сверху помидоры кружками",
+   "Духовка 190°C, 20 минут",
+   "Накрыть моцареллой, ещё 8 минут"
+  ]
+ },
+ {
+  "id": "d-ryba-folga",
+  "meal": "dinner",
+  "title": "Рыба в фольге с овощами",
+  "active_min": 10,
+  "photo": "photos/d-ryba-folga.jpg",
+  "query": "fish baked in foil with vegetables",
+  "ingredients": [
+   {
+    "name": "треска филе",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "морковь",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.5,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать овощи соломкой",
+   "Выложить на фольгу, сверху рыбу, лимон и масло",
+   "Плотно завернуть",
+   "Духовка 200°C, 30 минут"
+  ]
+ },
+ {
+  "id": "d-frittata-kabachok",
+  "meal": "dinner",
+  "title": "Фриттата с кабачком",
+  "active_min": 15,
+  "photo": "photos/d-frittata-kabachok.jpg",
+  "query": "zucchini omelette in frying pan",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 4,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "кабачок",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук зелёный",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Натереть кабачок, отжать, обжарить 5 минут",
+   "Залить взбитыми яйцами с сыром",
+   "Под крышкой 8 минут на слабом огне",
+   "Посыпать зелёным луком"
+  ]
+ },
+ {
+  "id": "d-salat-kapusta-kurica",
+  "meal": "dinner",
+  "title": "Салат из капусты с курицей",
+  "active_min": 12,
+  "photo": "photos/d-salat-kapusta-kurica.jpg",
+  "query": "cabbage salad with chicken strips bowl",
+  "ingredients": [
+   {
+    "name": "капуста белокочанная",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "куриное филе",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "огурцы",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "йогурт безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить курицу полосками 8 минут",
+   "Нашинковать капусту, помять с солью",
+   "Добавить морковь и огурец соломкой",
+   "Заправить йогуртом с лимоном"
+  ]
+ },
+ {
+  "id": "d-baklazhany-farsh",
+  "meal": "dinner",
+  "title": "Баклажаны с фаршем в духовке",
+  "active_min": 20,
+  "photo": "photos/d-baklazhany-farsh.jpg",
+  "query": "stuffed eggplant with minced meat baked",
+  "ingredients": [
+   {
+    "name": "баклажан",
+    "qty": 350,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "фарш говяжий",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Разрезать баклажаны вдоль, вынуть мякоть",
+   "Обжарить лук с фаршем и мякотью 10 минут, добавить помидоры",
+   "Начинить лодочки, посыпать сыром",
+   "Духовка 190°C, 30 минут"
+  ]
+ },
+ {
+  "id": "d-legkiy-ovoshnoi-sup",
+  "meal": "dinner",
+  "title": "Лёгкий овощной суп",
+  "active_min": 20,
+  "photo": "photos/d-legkiy-ovoshnoi-sup.jpg",
+  "query": "vegetable soup bowl with carrots and potatoes",
+  "ingredients": [
+   {
+    "name": "картофель",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "морковь",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "цветная капуста замороженная",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "горошек зелёный замороженный",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "бульонный кубик",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук с морковью 6 минут",
+   "Залить 800 мл воды, добавить кубик и картофель",
+   "Варить 12 минут, добавить капусту и горошек",
+   "Ещё 7 минут, посыпать зеленью"
+  ]
+ },
+ {
+  "id": "d-krevetki-vok",
+  "meal": "dinner",
+  "title": "Креветки с овощами вок",
+  "active_min": 15,
+  "photo": "photos/d-krevetki-vok.jpg",
+  "query": "shrimp with vegetables in pan",
+  "ingredients": [
+   {
+    "name": "креветки",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "стручковая фасоль замороженная",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "морковь",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соевый соус",
+    "qty": 25,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "имбирь",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "кунжут",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Разогреть сковороду сильно, обжарить чеснок и имбирь 1 минуту",
+   "Добавить овощи, жарить 6 минут",
+   "Добавить креветки и соевый соус, 4 минуты",
+   "Посыпать кунжутом"
+  ]
+ }
+]

@@ -1,0 +1,1491 @@
+[
+ {
+  "id": "b-omlet-tomat",
+  "meal": "breakfast",
+  "title": "Омлет с помидорами и сыром",
+  "active_min": 10,
+  "photo": "photos/b-omlet-tomat.jpg",
+  "query": "omelette with tomatoes and cheese on plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "помидоры",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 50,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Взбить яйца с молоком и солью",
+   "Обжарить нарезанные помидоры 2 минуты",
+   "Залить яйцами, посыпать сыром, накрыть крышкой на 5 минут"
+  ]
+ },
+ {
+  "id": "b-ovsyanka-banan",
+  "meal": "breakfast",
+  "title": "Овсянка с бананом и орехами",
+  "active_min": 10,
+  "photo": "photos/b-ovsyanka-banan.jpg",
+  "query": "oatmeal porridge with banana and nuts bowl",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 250,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить хлопья горячим молоком, щепотка соли",
+   "Варить 5 минут, помешивая",
+   "Сверху банан кружками, орехи и мёд"
+  ]
+ },
+ {
+  "id": "b-syrniki",
+  "meal": "breakfast",
+  "title": "Сырники из творога",
+  "active_min": 20,
+  "photo": "photos/b-syrniki.jpg",
+  "query": "cottage cheese pancakes syrniki with sour cream",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 180,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яйца",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "мука",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сахар",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Размять творог с яйцом, сахаром и солью",
+   "Вмешать муку, слепить лепёшки",
+   "Жарить по 3 минуты с каждой стороны",
+   "Подавать со сметаной"
+  ]
+ },
+ {
+  "id": "b-tvorog-yagody",
+  "meal": "breakfast",
+  "title": "Творог с ягодами и мёдом",
+  "active_min": 5,
+  "photo": "photos/b-tvorog-yagody.jpg",
+  "query": "cottage cheese with berries and honey bowl",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Разморозить ягоды 5 минут в тёплой воде",
+   "Выложить творог, сверху ягоды",
+   "Полить мёдом, посыпать орехами"
+  ]
+ },
+ {
+  "id": "b-yaichnica-bekon",
+  "meal": "breakfast",
+  "title": "Яичница с беконом и зеленью",
+  "active_min": 10,
+  "photo": "photos/b-yaichnica-bekon.jpg",
+  "query": "fried eggs with bacon on plate breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "бекон",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить бекон 3 минуты без масла",
+   "Разбить к нему яйца, жарить 4 минуты",
+   "Посыпать зеленью, подать с хлебом"
+  ]
+ },
+ {
+  "id": "b-tost-avokado",
+  "meal": "breakfast",
+  "title": "Тост с авокадо и яйцом",
+  "active_min": 15,
+  "photo": "photos/b-tost-avokado.jpg",
+  "query": "avocado toast slice bread breakfast",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "авокадо",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Подсушить хлеб в тостере",
+   "Размять авокадо с лимоном и солью",
+   "Сварить яйца всмятку 5 минут",
+   "Намазать авокадо, сверху яйцо"
+  ]
+ },
+ {
+  "id": "b-granola-yogurt",
+  "meal": "breakfast",
+  "title": "Йогурт с гранолой и ягодами",
+  "active_min": 5,
+  "photo": "photos/b-granola-yogurt.jpg",
+  "query": "yogurt granola berries breakfast bowl",
+  "ingredients": [
+   {
+    "name": "йогурт безлактозный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "гранола",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Разморозить ягоды",
+   "Выложить слоями йогурт и гранолу",
+   "Сверху ягоды и мёд"
+  ]
+ },
+ {
+  "id": "b-blinchiki",
+  "meal": "breakfast",
+  "title": "Тонкие блинчики",
+  "active_min": 20,
+  "photo": "photos/b-blinchiki.jpg",
+  "query": "thin crepes pancakes stack with sour cream",
+  "ingredients": [
+   {
+    "name": "мука",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 250,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 20,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Взбить яйца с молоком, сахаром и солью",
+   "Всыпать муку, размешать до однородности",
+   "Жарить по минуте с каждой стороны",
+   "Подавать со сметаной"
+  ]
+ },
+ {
+  "id": "b-grechka-moloko",
+  "meal": "breakfast",
+  "title": "Гречка на молоке",
+  "active_min": 10,
+  "photo": "photos/b-grechka-moloko.jpg",
+  "query": "buckwheat porridge bowl breakfast",
+  "ingredients": [
+   {
+    "name": "гречка",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 200,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить гречку водой 1:2, варить 15 минут под крышкой",
+   "Добавить горячее молоко, сахар и соль",
+   "Заправить сливочным маслом"
+  ]
+ },
+ {
+  "id": "b-omlet-shpinat",
+  "meal": "breakfast",
+  "title": "Омлет со шпинатом и сыром",
+  "active_min": 10,
+  "photo": "photos/b-omlet-shpinat.jpg",
+  "query": "spinach cheese omelette plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "шпинат",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Прогреть шпинат на сковороде 2 минуты",
+   "Залить взбитыми яйцами",
+   "Посыпать сыром, накрыть на 5 минут"
+  ]
+ },
+ {
+  "id": "b-zapekanka-tvorog",
+  "meal": "breakfast",
+  "title": "Творожная запеканка",
+  "active_min": 15,
+  "photo": "photos/b-zapekanka-tvorog.jpg",
+  "query": "baked cottage cheese casserole slice",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 250,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "изюм",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мука",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Смешать творог, яйца, сахар, муку и изюм",
+   "Выложить в форму",
+   "Духовка 180°C, 35 минут",
+   "Подавать со сметаной"
+  ]
+ },
+ {
+  "id": "b-smuzi-boul",
+  "meal": "breakfast",
+  "title": "Смузи-боул с бананом",
+  "active_min": 10,
+  "photo": "photos/b-smuzi-boul.jpg",
+  "query": "smoothie bowl banana berries granola",
+  "ingredients": [
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "йогурт безлактозный",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "гранола",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Пробить блендером банан, ягоды и йогурт",
+   "Вылить в миску",
+   "Сверху гранола и мёд"
+  ]
+ },
+ {
+  "id": "b-yaica-vsmyatku",
+  "meal": "breakfast",
+  "title": "Яйца всмятку с тостами",
+  "active_min": 10,
+  "photo": "photos/b-yaica-vsmyatku.jpg",
+  "query": "soft boiled eggs with toast soldiers breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Опустить яйца в кипяток на 5 минут",
+   "Подсушить хлеб, намазать маслом",
+   "Посолить яйца, посыпать зеленью"
+  ]
+ },
+ {
+  "id": "b-tortilya-yaica",
+  "meal": "breakfast",
+  "title": "Тортилья с яйцом и сыром",
+  "active_min": 12,
+  "photo": "photos/b-tortilya-yaica.jpg",
+  "query": "breakfast tortilla wrap with egg and cheese",
+  "ingredients": [
+   {
+    "name": "тортилья",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "помидоры",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Пожарить яичницу-болтунью 4 минуты",
+   "Выложить на тортилью с сыром и помидорами",
+   "Свернуть и подрумянить на сухой сковороде 2 минуты"
+  ]
+ },
+ {
+  "id": "b-ovsyanoblin",
+  "meal": "breakfast",
+  "title": "Овсяноблин с творогом",
+  "active_min": 15,
+  "photo": "photos/b-ovsyanoblin.jpg",
+  "query": "savory pancake roll with cheese filling",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 50,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Смолоть хлопья, смешать с яйцами и молоком",
+   "Вылить на сковороду, жарить 4 минуты под крышкой",
+   "Перевернуть, ещё 2 минуты",
+   "Намазать творожным сыром, посыпать зеленью, свернуть"
+  ]
+ },
+ {
+  "id": "b-risovaya-kasha",
+  "meal": "breakfast",
+  "title": "Рисовая каша с изюмом",
+  "active_min": 15,
+  "photo": "photos/b-risovaya-kasha.jpg",
+  "query": "rice pudding porridge with raisins bowl",
+  "ingredients": [
+   {
+    "name": "рис",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 300,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "изюм",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сахар",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить рис в воде 10 минут",
+   "Добавить молоко, сахар, соль и изюм",
+   "Томить 10 минут, заправить маслом"
+  ]
+ },
+ {
+  "id": "b-buterbrod-losos",
+  "meal": "breakfast",
+  "title": "Бутерброд с лососем",
+  "active_min": 5,
+  "photo": "photos/b-buterbrod-losos.jpg",
+  "query": "salmon cream cheese toast open sandwich",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лосось филе",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   }
+  ],
+  "steps": [
+   "Подсушить хлеб",
+   "Намазать творожным сыром",
+   "Выложить лосось, огурец и зелень, сбрызнуть лимоном"
+  ]
+ },
+ {
+  "id": "b-shakshuka",
+  "meal": "breakfast",
+  "title": "Шакшука",
+  "active_min": 20,
+  "photo": "photos/b-shakshuka.jpg",
+  "query": "shakshuka eggs in tomato sauce skillet",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "томаты в собственном соку",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "чеснок",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "паприка",
+    "aisle": "специи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук, перец и чеснок 5 минут",
+   "Добавить томаты и паприку, тушить 5 минут",
+   "Сделать лунки, разбить яйца",
+   "Под крышкой 7 минут, подать с хлебом"
+  ]
+ },
+ {
+  "id": "b-ovsyanye-pankeiki",
+  "meal": "breakfast",
+  "title": "Овсяные панкейки",
+  "active_min": 20,
+  "photo": "photos/b-ovsyanye-pankeiki.jpg",
+  "query": "stack of oat pancakes with honey",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "яйца",
+    "qty": 2,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 80,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "разрыхлитель",
+    "qty": 5,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "мёд",
+    "qty": 20,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "Пробить блендером хлопья, банан, яйца и молоко",
+   "Добавить разрыхлитель",
+   "Жарить оладьи по 2 минуты с каждой стороны",
+   "Полить мёдом"
+  ]
+ },
+ {
+  "id": "b-yaichnica-gribami",
+  "meal": "breakfast",
+  "title": "Яичница с грибами",
+  "active_min": 15,
+  "photo": "photos/b-yaichnica-gribami.jpg",
+  "query": "fried eggs with mushrooms skillet breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "шампиньоны",
+    "qty": 120,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "лук репчатый",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить лук и грибы 7 минут",
+   "Разбить сверху яйца",
+   "Жарить под крышкой 4 минуты, посыпать зеленью"
+  ]
+ },
+ {
+  "id": "b-kuskus-yabloko",
+  "meal": "breakfast",
+  "title": "Кускус с яблоком и корицей",
+  "active_min": 10,
+  "photo": "photos/b-kuskus-yabloko.jpg",
+  "query": "couscous breakfast bowl spoon",
+  "ingredients": [
+   {
+    "name": "кускус",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 150,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "яблоко",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "корица",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Залить кускус горячим молоком, накрыть на 5 минут",
+   "Обжарить яблоко кубиками с маслом и корицей 4 минуты",
+   "Смешать, полить мёдом"
+  ]
+ },
+ {
+  "id": "b-tvorog-ogurec",
+  "meal": "breakfast",
+  "title": "Творог с огурцом и зеленью",
+  "active_min": 5,
+  "photo": "photos/b-tvorog-ogurec.jpg",
+  "query": "cottage cheese bowl with fresh herbs",
+  "ingredients": [
+   {
+    "name": "творог безлактозный",
+    "qty": 200,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сметана безлактозная",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Нарезать огурец и зелень",
+   "Смешать с творогом и сметаной, посолить",
+   "Подать с хлебом"
+  ]
+ },
+ {
+  "id": "b-frittata-ovoshi",
+  "meal": "breakfast",
+  "title": "Фриттата с овощами",
+  "active_min": 15,
+  "photo": "photos/b-frittata-ovoshi.jpg",
+  "query": "frittata in pan with vegetables",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 4,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "перец болгарский",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 50,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить перец 4 минуты в форме для духовки",
+   "Залить взбитыми яйцами, добавить черри и сыр",
+   "Духовка 180°C, 15 минут"
+  ]
+ },
+ {
+  "id": "b-lenivaya-ovsyanka",
+  "meal": "breakfast",
+  "title": "Ленивая овсянка на кефире",
+  "active_min": 5,
+  "photo": "photos/b-lenivaya-ovsyanka.jpg",
+  "query": "overnight oats jar with berries",
+  "ingredients": [
+   {
+    "name": "овсяные хлопья",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "кефир безлактозный",
+    "qty": 200,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "ягоды замороженные",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "заморозка"
+   },
+   {
+    "name": "мёд",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "орехи грецкие",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   }
+  ],
+  "steps": [
+   "С вечера залить хлопья кефиром в банке",
+   "Добавить ягоды и мёд, убрать в холодильник",
+   "Утром посыпать орехами"
+  ]
+ },
+ {
+  "id": "b-tost-arahis-banan",
+  "meal": "breakfast",
+  "title": "Тост с арахисовой пастой и бананом",
+  "active_min": 5,
+  "photo": "photos/b-tost-arahis-banan.jpg",
+  "query": "peanut butter banana toast",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "арахисовая паста",
+    "qty": 40,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "банан",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "мёд",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "корица",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Подсушить хлеб в тостере",
+   "Намазать арахисовой пастой",
+   "Выложить банан кружками, полить мёдом, присыпать корицей"
+  ]
+ },
+ {
+  "id": "b-omlet-vetchina",
+  "meal": "breakfast",
+  "title": "Омлет с ветчиной",
+  "active_min": 10,
+  "photo": "photos/b-omlet-vetchina.jpg",
+  "query": "omelette with ham and cheese on plate",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "ветчина",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 50,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 30,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло растительное",
+    "qty": 10,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Обжарить ветчину кубиками 3 минуты",
+   "Залить яйцами с молоком",
+   "Посыпать сыром, под крышкой 5 минут"
+  ]
+ },
+ {
+  "id": "b-pshenka-tykva",
+  "meal": "breakfast",
+  "title": "Пшённая каша с тыквой",
+  "active_min": 15,
+  "photo": "photos/b-pshenka-tykva.jpg",
+  "query": "pumpkin porridge in bowl",
+  "ingredients": [
+   {
+    "name": "пшено",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "тыква",
+    "qty": 150,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "молоко безлактозное",
+    "qty": 250,
+    "unit": "мл",
+    "aisle": "молочка"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "сахар",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить тыкву кубиками 10 минут",
+   "Добавить промытое пшено и молоко",
+   "Варить 15 минут под крышкой, заправить маслом"
+  ]
+ },
+ {
+  "id": "b-salat-yaico-avokado",
+  "meal": "breakfast",
+  "title": "Салат с яйцом и авокадо",
+  "active_min": 10,
+  "photo": "photos/b-salat-yaico-avokado.jpg",
+  "query": "egg avocado salad bowl breakfast",
+  "ingredients": [
+   {
+    "name": "яйца",
+    "qty": 3,
+    "unit": "шт",
+    "aisle": "молочка"
+   },
+   {
+    "name": "авокадо",
+    "qty": 1,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "помидоры черри",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "салат листовой",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "масло оливковое",
+    "qty": 15,
+    "unit": "мл",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "лимон",
+    "qty": 0.25,
+    "unit": "шт",
+    "aisle": "овощи"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Отварить яйца 8 минут, остудить",
+   "Нарезать авокадо, черри и салат",
+   "Смешать, заправить маслом с лимоном"
+  ]
+ },
+ {
+  "id": "b-roll-lavash-tvorog",
+  "meal": "breakfast",
+  "title": "Ролл из лаваша с творогом",
+  "active_min": 10,
+  "photo": "photos/b-roll-lavash-tvorog.jpg",
+  "query": "tortilla wrap sliced rolls on board",
+  "ingredients": [
+   {
+    "name": "лаваш",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "творожный сыр безлактозный",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "огурцы",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "зелень свежая",
+    "qty": 15,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "ветчина",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "соль",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Намазать лаваш творожным сыром",
+   "Выложить ветчину, огурец соломкой и зелень",
+   "Свернуть рулетом, нарезать наискосок"
+  ]
+ },
+ {
+  "id": "b-goryachiy-buterbrod",
+  "meal": "breakfast",
+  "title": "Горячий бутерброд с сыром",
+  "active_min": 10,
+  "photo": "photos/b-goryachiy-buterbrod.jpg",
+  "query": "grilled cheese tomato sandwich melted",
+  "ingredients": [
+   {
+    "name": "хлеб цельнозерновой",
+    "qty": 100,
+    "unit": "г",
+    "aisle": "бакалея"
+   },
+   {
+    "name": "сыр безлактозный",
+    "qty": 70,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "помидоры",
+    "qty": 80,
+    "unit": "г",
+    "aisle": "овощи"
+   },
+   {
+    "name": "ветчина",
+    "qty": 60,
+    "unit": "г",
+    "aisle": "мясо-рыба"
+   },
+   {
+    "name": "масло сливочное",
+    "qty": 10,
+    "unit": "г",
+    "aisle": "молочка"
+   },
+   {
+    "name": "перец чёрный",
+    "aisle": "специи"
+   }
+  ],
+  "steps": [
+   "Собрать бутерброды: хлеб, ветчина, помидор, сыр",
+   "Обжарить на сливочном масле под крышкой 4 минуты",
+   "Перевернуть, ещё 3 минуты до расплавленного сыра"
+  ]
+ }
+]

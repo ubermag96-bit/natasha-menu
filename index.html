@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Меню на неделю</title>
+<style>
+:root{
+  --bg:#faf7f2; --card:#fff; --ink:#1c1b19; --muted:#7a736a; --line:#e7e0d5;
+  --accent:#c2410c; --accent-soft:#fdece3; --ok:#15803d; --shadow:0 1px 2px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16151a; --card:#211f26; --ink:#f2efe9; --muted:#9c948a; --line:#332f3a;
+    --accent:#fb923c; --accent-soft:#3a2415; --ok:#4ade80; --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  padding-bottom:96px}
+h1{font-size:22px;margin:0 0 2px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);
+  padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.sub{color:var(--muted);font-size:13px}
+.wrap{padding:0 16px}
+
+.day{margin-top:22px}
+.day-name{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--line)}
+.meal{margin-top:14px}
+.meal-name{font-size:14px;font-weight:600;margin-bottom:8px;display:flex;
+  align-items:center;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--line);flex:none}
+.meal.done .dot{background:var(--ok)}
+
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:14px;
+  margin-bottom:8px;overflow:hidden;box-shadow:var(--shadow);transition:border-color .15s}
+.card.sel{border-color:var(--accent);background:var(--accent-soft)}
+.card-top{display:flex;gap:12px;padding:10px;align-items:center;cursor:pointer}
+.thumb{width:76px;height:76px;border-radius:10px;flex:none;object-fit:cover;
+  background:var(--line);display:flex;align-items:center;justify-content:center;
+  font-size:28px;color:var(--muted)}
+.info{flex:1;min-width:0}
+.title{font-weight:600;font-size:15px;margin-bottom:3px}
+.time{font-size:12px;color:var(--muted)}
+.ings{font-size:12px;color:var(--muted);margin-top:4px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.check{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);flex:none;
+  display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff}
+.card.sel .check{background:var(--accent);border-color:var(--accent)}
+.more{width:100%;background:none;border:0;border-top:1px solid var(--line);
+  color:var(--muted);font:inherit;font-size:13px;padding:8px;cursor:pointer}
+.details{display:none;padding:0 12px 12px;font-size:14px}
+.card.open .details{display:block}
+.details .big{width:100%;border-radius:10px;margin-top:10px;display:block}
+.swap{background:none;border:0;color:var(--accent);font:inherit;font-size:13px;
+  padding:4px 0;cursor:pointer;text-decoration:underline}
+.details h4{margin:12px 0 6px;font-size:13px;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--muted)}
+.details ul,.details ol{margin:0;padding-left:20px}
+.details li{margin-bottom:3px}
+
+footer{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);
+  border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom))}
+.bar{display:flex;align-items:center;gap:12px}
+.count{flex:1;font-size:14px}
+.count b{font-size:17px}
+button.act{background:var(--accent);color:#fff;border:0;border-radius:10px;
+  padding:11px 16px;font:inherit;font-weight:600;cursor:pointer}
+button.act:disabled{opacity:.4}
+button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
+
+.sheet{position:fixed;inset:0;z-index:40;background:var(--bg);overflow-y:auto;
+  display:none;padding:16px 16px 40px}
+.sheet.open{display:block}
+.sheet h2{margin:0 0 4px;font-size:20px}
+.aisle{margin-top:20px}
+.aisle h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-size:15px}
+.row span:last-child{color:var(--muted);white-space:nowrap}
+.pantry{font-size:14px;color:var(--muted);margin-top:6px}
+.sheet-actions{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap}
+.toast{position:fixed;bottom:110px;left:50%;transform:translateX(-50%);
+  background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:20px;
+  font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:50}
+.toast.show{opacity:1}
+.loading{padding:60px 16px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Меню на неделю</h1>
+  <div class="sub" id="dates"></div>
+</header>
+
+<div class="wrap" id="menu"><div class="loading">Загружаю меню…</div></div>
+
+<footer>
+  <div class="bar">
+    <div class="count"><b id="n">0</b> из 21 выбрано</div>
+    <button class="act" id="openList">Список покупок</button>
+  </div>
+</footer>
+
+<div class="sheet" id="sheet">
+  <h2>Список покупок</h2>
+  <div class="sub" id="sheetSub"></div>
+  <div id="list"></div>
+  <div class="sheet-actions">
+    <button class="act" id="copy">Скопировать</button>
+    <button class="act ghost" id="share">Отправить в телеграм</button>
+    <button class="act ghost" id="close">Назад к меню</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const DAYS = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
+const MEALS = [['breakfast','Завтрак'],['lunch','Обед'],['dinner','Ужин']];
+const AISLE_ORDER = ['овощи','мясо-рыба','молочка','заморозка','бакалея'];
+const EATERS = 2;                 // на двоих
+const MONTHS = ['января','февраля','марта','апреля','мая','июня','июля',
+                'августа','сентября','октября','ноября','декабря'];
+
+/* ---------- неделя ---------- */
+// Воскресенье → меню на завтрашнюю неделю. Пн–Сб → меню текущей недели,
+// чтобы среди недели она видела ровно то, что выбрала в воскресенье.
+function weekStart(today = new Date()){
+  const d = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const dow = d.getDay();                       // 0 — воскресенье
+  d.setDate(d.getDate() + (dow === 0 ? 1 : 1 - dow));
+  return d;
+}
+function seedOf(d){
+  return d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate();
+}
+function fmt(d){ return d.getDate() + ' ' + MONTHS[d.getMonth()]; }
+function iso(d){ return d.toISOString().slice(0,10); }
+
+/* ---------- предсказуемая тасовка ---------- */
+function rng(seed){
+  let a = seed >>> 0;
+  return function(){
+    a += 0x6D2B79F5;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function shuffled(arr, seed){
+  const a = arr.slice(), r = rng(seed);
+  for (let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(r() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/* ---------- округление до покупаемого ---------- */
+function roundUp(v, step){ return Math.ceil(v / step) * step; }
+function amount(qty, unit){
+  if (unit === 'шт'){
+    const n = Math.ceil(qty - 0.001);
+    return n + ' шт';
+  }
+  if (qty >= 1000) return (roundUp(qty, 100) / 1000).toFixed(1).replace('.', ',') +
+                          (unit === 'мл' ? ' л' : ' кг');
+  return roundUp(qty, unit === 'мл' ? 50 : 10) + ' ' + unit;
+}
+
+/* ---------- состояние ---------- */
+const start = weekStart();
+const KEY = 'menu-' + iso(start);
+let picked = {};
+try { picked = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { picked = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch(e){} }
+
+let DISHES = [], byId = {}, week = [];
+const expanded = new Set();   // приёмы пищи, где показаны все три варианта
+
+/* ---------- сборка недели ---------- */
+function buildWeek(){
+  const seed = seedOf(start);
+  const pools = {};
+  MEALS.forEach(([m], i) => {
+    pools[m] = shuffled(DISHES.filter(d => d.meal === m), seed + i * 977);
+  });
+  week = [];
+  for (let day = 0; day < 7; day++){
+    const date = new Date(start); date.setDate(start.getDate() + day);
+    const meals = MEALS.map(([m, label]) => ({
+      meal: m, label,
+      slot: m + '-' + day,
+      options: [0,1,2].map(k => pools[m][(day * 3 + k) % pools[m].length])
+    }));
+    week.push({ date, meals });
+  }
+}
+
+/* ---------- отрисовка ---------- */
+function ingLine(d){
+  return d.ingredients.filter(i => i.aisle !== 'специи')
+          .map(i => i.name).join(', ');
+}
+function render(){
+  const end = new Date(start); end.setDate(start.getDate() + 6);
+  document.getElementById('dates').textContent =
+    'с ' + fmt(start) + ' по ' + fmt(end) + ' · продукты на двоих';
+
+  const root = document.getElementById('menu');
+  root.innerHTML = '';
+  week.forEach((day, di) => {
+    const sec = document.createElement('section');
+    sec.className = 'day';
+    sec.innerHTML = '<div class="day-name">' + DAYS[di] + ', ' + fmt(day.date) + '</div>';
+    day.meals.forEach(meal => {
+      const block = document.createElement('div');
+      block.className = 'meal' + (picked[meal.slot] ? ' done' : '');
+      block.innerHTML = '<div class="meal-name"><span class="dot"></span>' + meal.label + '</div>';
+      const chosen = picked[meal.slot];
+      const collapsed = chosen && !expanded.has(meal.slot);
+      const show = collapsed ? meal.options.filter(d => d.id === chosen) : meal.options;
+      show.forEach(d => block.appendChild(cardOf(d, meal.slot)));
+      if (chosen){
+        const sw = document.createElement('button');
+        sw.className = 'swap';
+        sw.textContent = collapsed ? 'другие варианты' : 'свернуть варианты';
+        sw.onclick = () => {
+          if (collapsed) expanded.add(meal.slot); else expanded.delete(meal.slot);
+          render();
+        };
+        block.appendChild(sw);
+      }
+      sec.appendChild(block);
+    });
+    root.appendChild(sec);
+  });
+  updateCount();
+}
+function cardOf(d, slot){
+  const el = document.createElement('article');
+  el.className = 'card' + (picked[slot] === d.id ? ' sel' : '');
+  const img = '<img class="thumb" src="' + d.photo + '" alt="" loading="lazy" ' +
+              'onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),' +
+              '{className:\'thumb\',textContent:\'🍽\'}))">';
+  el.innerHTML =
+    '<div class="card-top">' + img +
+      '<div class="info">' +
+        '<div class="title">' + d.title + '</div>' +
+        '<div class="time">активно ' + d.active_min + ' мин</div>' +
+        '<div class="ings">' + ingLine(d) + '</div>' +
+      '</div>' +
+      '<div class="check">✓</div>' +
+    '</div>' +
+    '<button class="more">Продукты и рецепт</button>' +
+    '<div class="details">' +
+      '<img class="big" src="' + d.photo + '" alt="" loading="lazy" onerror="this.remove()">' +
+      '<h4>Продукты на одного</h4><ul>' +
+        d.ingredients.map(i => '<li>' + i.name +
+          (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + i.qty + ' ' + i.unit) +
+          '</li>').join('') +
+      '</ul>' +
+      '<h4>Как готовить</h4><ol>' +
+        d.steps.map(s => '<li>' + s + '</li>').join('') +
+      '</ol>' +
+    '</div>';
+  el.querySelector('.card-top').onclick = () => {
+    if (picked[slot] === d.id){ delete picked[slot]; expanded.delete(slot); }
+    else { picked[slot] = d.id; expanded.delete(slot); }
+    save(); render();
+  };
+  el.querySelector('.more').onclick = e => {
+    e.stopPropagation();
+    el.classList.toggle('open');
+  };
+  return el;
+}
+function updateCount(){
+  const n = Object.keys(picked).length;
+  document.getElementById('n').textContent = n;
+}
+
+/* ---------- список покупок ---------- */
+function shopping(){
+  const sum = {}, spices = new Set();
+  Object.values(picked).forEach(id => {
+    const d = byId[id];
+    if (!d) return;
+    d.ingredients.forEach(i => {
+      if (i.aisle === 'специи'){ spices.add(i.name); return; }
+      const k = i.name;
+      if (!sum[k]) sum[k] = { qty: 0, unit: i.unit, aisle: i.aisle };
+      sum[k].qty += i.qty * EATERS;
+    });
+  });
+  return { sum, spices: [...spices].sort() };
+}
+function renderList(){
+  const { sum, spices } = shopping();
+  const n = Object.keys(picked).length;
+  document.getElementById('sheetSub').textContent =
+    n === 21 ? 'Все 21 блюдо выбрано. Продукты на двоих.'
+             : 'Выбрано ' + n + ' из 21. Список пополнится, когда выберешь остальное.';
+  const box = document.getElementById('list');
+  box.innerHTML = '';
+  if (!n){ box.innerHTML = '<p class="pantry">Пока ничего не выбрано.</p>'; return; }
+
+  AISLE_ORDER.forEach(aisle => {
+    const items = Object.entries(sum).filter(([, v]) => v.aisle === aisle)
+                        .sort((a, b) => a[0].localeCompare(b[0], 'ru'));
+    if (!items.length) return;
+    const d = document.createElement('div');
+    d.className = 'aisle';
+    d.innerHTML = '<h3>' + aisle + '</h3>' + items.map(([name, v]) =>
+      '<div class="row"><span>' + name + '</span><span>' + amount(v.qty, v.unit) + '</span></div>'
+    ).join('');
+    box.appendChild(d);
+  });
+  if (spices.length){
+    const d = document.createElement('div');
+    d.className = 'aisle';
+    d.innerHTML = '<h3>проверь, что есть дома</h3><div class="pantry">' +
+                  spices.join(', ') + '</div>';
+    box.appendChild(d);
+  }
+}
+function listText(){
+  const { sum, spices } = shopping();
+  const end = new Date(start); end.setDate(start.getDate() + 6);
+  let t = 'Продукты на неделю ' + fmt(start) + ' — ' + fmt(end) + ' (на двоих)\n';
+  AISLE_ORDER.forEach(aisle => {
+    const items = Object.entries(sum).filter(([, v]) => v.aisle === aisle)
+                        .sort((a, b) => a[0].localeCompare(b[0], 'ru'));
+    if (!items.length) return;
+    t += '\n' + aisle.toUpperCase() + '\n';
+    items.forEach(([name, v]) => { t += '• ' + name + ' — ' + amount(v.qty, v.unit) + '\n'; });
+  });
+  if (spices.length) t += '\nДома проверить: ' + spices.join(', ') + '\n';
+  return t;
+}
+
+/* ---------- события ---------- */
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
+document.getElementById('openList').onclick = () => {
+  renderList();
+  document.getElementById('sheet').classList.add('open');
+  window.scrollTo(0, 0);
+};
+document.getElementById('close').onclick = () =>
+  document.getElementById('sheet').classList.remove('open');
+document.getElementById('copy').onclick = async () => {
+  const text = listText();
+  try { await navigator.clipboard.writeText(text); toast('Список скопирован'); }
+  catch(e){
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); ta.remove(); toast('Список скопирован');
+  }
+};
+document.getElementById('share').onclick = () => {
+  window.open('https://t.me/share/url?url=' + encodeURIComponent(' ') +
+              '&text=' + encodeURIComponent(listText()), '_blank');
+};
+
+/* ---------- старт ---------- */
+fetch('data/dishes.json')
+  .then(r => r.json())
+  .then(d => {
+    DISHES = d;
+    d.forEach(x => byId[x.id] = x);
+    buildWeek();
+    render();
+  })
+  .catch(() => {
+    document.getElementById('menu').innerHTML =
+      '<div class="loading">Не получилось загрузить меню. Открой ссылку ещё раз.</div>';
+  });
+</script>
+</body>
+</html>
