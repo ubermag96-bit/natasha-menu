@@ -11,6 +11,24 @@ PARTS = ["breakfast", "lunch", "dinner"]
 AISLES = {"овощи", "мясо-рыба", "молочка", "бакалея", "заморозка", "специи", "прочее"}
 MAX_ACTIVE = 20
 
+def norm(t):
+    return t.lower().replace("ё", "е")
+
+
+def mentioned(name, steps):
+    """Продукт считается упомянутым, если в шагах есть корень любого его слова.
+
+    Русские окончания режем грубо: берём слово без двух последних букв,
+    но не короче трёх. «яйца» -> «яйц» находит «яйцом», «хлопья» -> «хлопь».
+    """
+    for word in norm(name).split():
+        if len(word) < 3:
+            continue
+        if word[:max(3, len(word) - 2)] in steps:
+            return True
+    return False
+
+
 def main():
     dishes, errors = [], []
     for part in PARTS:
@@ -49,6 +67,13 @@ def main():
                 if "qty" not in ing or "unit" not in ing:
                     errors.append(f"{d['id']}: у «{ing['name']}» нет количества или единицы")
                 names[ing["name"]].add((ing["aisle"], ing.get("unit", "")))
+
+    # каждый продукт должен быть упомянут в рецепте
+    for d in dishes:
+        steps = norm(" ".join(d["steps"]))
+        for ing in d["ingredients"]:
+            if not mentioned(ing["name"], steps):
+                errors.append(f"{d['id']}: «{ing['name']}» есть в продуктах, но не в рецепте")
 
     # один продукт — один отдел и одна единица измерения
     for name, variants in sorted(names.items()):
