@@ -85,6 +85,18 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
 .row{display:flex;justify-content:space-between;gap:12px;padding:6px 0;font-size:15px}
 .row span:last-child{color:var(--muted);white-space:nowrap}
 .pantry{font-size:14px;color:var(--muted);margin-top:6px}
+.tabs{display:flex;gap:8px;margin:16px 0 4px}
+.tab{flex:1;background:none;border:1.5px solid var(--line);color:var(--muted);
+  border-radius:10px;padding:9px;font:inherit;font-size:14px;cursor:pointer}
+.tab.on{border-color:var(--accent);color:var(--accent);font-weight:600}
+.rec{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px;margin-bottom:10px}
+.rec h4{margin:0 0 2px;font-size:16px}
+.rec .t{font-size:12px;color:var(--muted);margin-bottom:8px}
+.rec .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--muted);margin:10px 0 4px}
+.rec ul,.rec ol{margin:0;padding-left:20px;font-size:14px}
+.rec li{margin-bottom:3px}
 .sheet-actions{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap}
 .toast{position:fixed;bottom:110px;left:50%;transform:translateX(-50%);
   background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:20px;
@@ -110,9 +122,14 @@ button.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
 </footer>
 
 <div class="sheet" id="sheet">
-  <h2>Список покупок</h2>
+  <h2 id="sheetTitle">Список покупок</h2>
   <div class="sub" id="sheetSub"></div>
+  <div class="tabs">
+    <button class="tab on" id="tabShop">Продукты</button>
+    <button class="tab" id="tabCook">Рецепты</button>
+  </div>
   <div id="list"></div>
+  <div id="recipes" hidden></div>
   <div class="sheet-actions">
     <button class="act" id="copy">Скопировать</button>
     <button class="act ghost" id="share">Отправить в телеграм</button>
@@ -143,7 +160,12 @@ function seedOf(d){
   return d.getFullYear() * 400 + d.getMonth() * 31 + d.getDate();
 }
 function fmt(d){ return d.getDate() + ' ' + MONTHS[d.getMonth()]; }
-function iso(d){ return d.toISOString().slice(0,10); }
+// местная дата, без сдвига по Гринвичу
+function iso(d){
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return d.getFullYear() + '-' + m + '-' + day;
+}
 
 /* ---------- предсказуемая тасовка ---------- */
 function rng(seed){
@@ -177,11 +199,45 @@ function amount(qty, unit){
   return roundUp(qty, unit === 'мл' ? 50 : 10) + ' ' + unit;
 }
 
+function num(v){
+  return (Math.round(v * 100) / 100).toString().replace('.', ',');
+}
+function forTwo(i){ return num(i.qty * EATERS) + ' ' + i.unit; }
+
+/* ---------- ссылка с выбором ---------- */
+// 21 символ: по одному на приём пищи, 0-2 — номер варианта, x — не выбрано
+function encodePlan(){
+  let out = '';
+  week.forEach(day => day.meals.forEach(m => {
+    const k = m.options.findIndex(o => o.id === picked[m.slot]);
+    out += k < 0 ? 'x' : String(k);
+  }));
+  return iso(start) + '.' + out;
+}
+function applyPlan(code){
+  const [date, seq] = (code || '').split('.');
+  if (date !== iso(start) || !seq || seq.length !== 21) return false;
+  let k = 0, changed = false;
+  week.forEach(day => day.meals.forEach(m => {
+    const c = seq[k++];
+    if (c >= '0' && c <= '2' && m.options[+c]){ picked[m.slot] = m.options[+c].id; changed = true; }
+  }));
+  if (changed) save();
+  return changed;
+}
+function planUrl(){
+  return location.origin + location.pathname + '?p=' + encodePlan();
+}
+
 /* ---------- состояние ---------- */
 const start = weekStart();
 const KEY = 'menu-' + iso(start);
+const OLD_KEY = 'menu-' + start.toISOString().slice(0, 10);   // ключ до исправления даты
 let picked = {};
-try { picked = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { picked = {}; }
+try {
+  picked = JSON.parse(localStorage.getItem(KEY) ||
+                      localStorage.getItem(OLD_KEY) || '{}');
+} catch(e) { picked = {}; }
 function save(){ try { localStorage.setItem(KEY, JSON.stringify(picked)); } catch(e){} }
 
 let DISHES = [], byId = {}, week = [];
@@ -275,9 +331,9 @@ function cardOf(d, slot){
     '<button class="more">Продукты и рецепт</button>' +
     '<div class="details">' +
       '<img class="big" src="' + d.photo + '" alt="" loading="lazy" onerror="this.remove()">' +
-      '<h4>Продукты на одного</h4><ul>' +
+      '<h4>Продукты на двоих</h4><ul>' +
         d.ingredients.map(i => '<li>' + i.name +
-          (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + i.qty + ' ' + i.unit) +
+          (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + forTwo(i)) +
           '</li>').join('') +
       '</ul>' +
       '<h4>Как готовить</h4><ol>' +
@@ -354,6 +410,59 @@ function renderList(){
     box.appendChild(d);
   }
 }
+function chosenByDay(){
+  const out = [];
+  week.forEach((day, di) => {
+    if (day.past) return;
+    const items = day.meals
+      .filter(m => picked[m.slot])
+      .map(m => ({ label: m.label, dish: byId[picked[m.slot]] }))
+      .filter(x => x.dish);
+    if (items.length) out.push({ name: DAYS[di], date: day.date, items });
+  });
+  return out;
+}
+function renderRecipes(){
+  const box = document.getElementById('recipes');
+  const days = chosenByDay();
+  box.innerHTML = '';
+  if (!days.length){
+    box.innerHTML = '<p class="pantry">Пока ничего не выбрано — рецепты появятся здесь.</p>';
+    return;
+  }
+  days.forEach(day => {
+    const d = document.createElement('div');
+    d.className = 'aisle';
+    d.innerHTML = '<h3>' + day.name + ', ' + fmt(day.date) + '</h3>' +
+      day.items.map(({ label, dish }) =>
+        '<div class="rec">' +
+          '<h4>' + label + ': ' + dish.title + '</h4>' +
+          '<div class="t">активно ' + dish.active_min + ' мин</div>' +
+          '<div class="lbl">продукты на двоих</div><ul>' +
+            dish.ingredients.map(i => '<li>' + i.name +
+              (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + forTwo(i)) + '</li>').join('') +
+          '</ul>' +
+          '<div class="lbl">как готовить</div><ol>' +
+            dish.steps.map(x => '<li>' + x + '</li>').join('') +
+          '</ol>' +
+        '</div>').join('');
+    box.appendChild(d);
+  });
+}
+function recipesText(){
+  let t = 'Рецепты на неделю (продукты на двоих)\n';
+  chosenByDay().forEach(day => {
+    t += '\n=== ' + day.name.toUpperCase() + ', ' + fmt(day.date) + ' ===\n';
+    day.items.forEach(({ label, dish }) => {
+      t += '\n' + label + ': ' + dish.title + ' (активно ' + dish.active_min + ' мин)\n';
+      dish.ingredients.forEach(i => {
+        t += '  • ' + i.name + (i.aisle === 'специи' ? ' — по вкусу' : ' — ' + forTwo(i)) + '\n';
+      });
+      dish.steps.forEach((x, k) => { t += '  ' + (k + 1) + '. ' + x + '\n'; });
+    });
+  });
+  return t;
+}
 function listText(){
   const { sum, spices } = shopping();
   const end = new Date(start); end.setDate(start.getDate() + 6);
@@ -369,6 +478,20 @@ function listText(){
   return t;
 }
 
+/* ---------- вкладки шторки ---------- */
+let tab = 'shop';
+function showTab(which){
+  tab = which;
+  const shop = which === 'shop';
+  document.getElementById('list').hidden = !shop;
+  document.getElementById('recipes').hidden = shop;
+  document.getElementById('tabShop').classList.toggle('on', shop);
+  document.getElementById('tabCook').classList.toggle('on', !shop);
+  document.getElementById('sheetTitle').textContent = shop ? 'Список покупок' : 'Рецепты';
+  document.getElementById('copy').textContent = shop ? 'Скопировать список' : 'Скопировать рецепты';
+  window.scrollTo(0, 0);
+}
+
 /* ---------- события ---------- */
 function toast(msg){
   const t = document.getElementById('toast');
@@ -376,24 +499,27 @@ function toast(msg){
   setTimeout(() => t.classList.remove('show'), 1800);
 }
 document.getElementById('openList').onclick = () => {
-  renderList();
+  renderList(); renderRecipes(); showTab(tab);
   document.getElementById('sheet').classList.add('open');
-  window.scrollTo(0, 0);
 };
+document.getElementById('tabShop').onclick = () => showTab('shop');
+document.getElementById('tabCook').onclick = () => showTab('cook');
 document.getElementById('close').onclick = () =>
   document.getElementById('sheet').classList.remove('open');
 document.getElementById('copy').onclick = async () => {
-  const text = listText();
-  try { await navigator.clipboard.writeText(text); toast('Список скопирован'); }
+  const text = tab === 'shop' ? listText() : recipesText();
+  try { await navigator.clipboard.writeText(text); toast('Скопировано'); }
   catch(e){
     const ta = document.createElement('textarea');
     ta.value = text; document.body.appendChild(ta); ta.select();
-    document.execCommand('copy'); ta.remove(); toast('Список скопирован');
+    document.execCommand('copy'); ta.remove(); toast('Скопировано');
   }
 };
 document.getElementById('share').onclick = () => {
-  window.open('https://t.me/share/url?url=' + encodeURIComponent(' ') +
-              '&text=' + encodeURIComponent(listText()), '_blank');
+  const n = Object.keys(picked).filter(s => activeSlots().has(s)).length;
+  const text = 'Меню на неделю: ' + n + ' блюд, список продуктов и рецепты';
+  window.open('https://t.me/share/url?url=' + encodeURIComponent(planUrl()) +
+              '&text=' + encodeURIComponent(text), '_blank');
 };
 
 /* ---------- старт ---------- */
@@ -403,6 +529,8 @@ fetch('data/dishes.json')
     DISHES = d;
     d.forEach(x => byId[x.id] = x);
     buildWeek();
+    const code = new URLSearchParams(location.search).get('p');
+    if (code && applyPlan(code)) history.replaceState({}, '', location.pathname);
     render();
   })
   .catch(() => {
